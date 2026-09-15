@@ -1,0 +1,36 @@
+{
+  "$comment": "Only 2 walls and 2 hedges survive in the licensed source - the prototype's rich garden walls came from the Google trace and are excluded. Expect this layer to stay thin until estate plans arrive.",
+  "label": "Walls & fences",
+  "legend": [
+    { "label": "Wall", "swatch": "line", "color": "$color.barrier.wall" },
+    { "label": "Fence", "swatch": "line", "color": "$color.barrier.fence" },
+    { "label": "Hedge", "swatch": "line", "color": "$color.barrier.hedge" }
+  ],
+
+  "layers": [
+    {
+      "id": "barriers-line",
+      "type": "line",
+      "source": "barriers",
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": [
+          "match", ["get", "class"],
+          "wall", "$color.barrier.wall",
+          "fence", "$color.barrier.fence",
+          "hedge", "$color.barrier.hedge",
+          "railing", "$color.barrier.railing",
+          "kerb", "$color.barrier.kerb",
+          "$color.barrier.barrier"
+        ],
+        "line-width": [
+          "interpolate", ["linear"], ["zoom"],
+          15, 0.5,
+          17, ["match", ["get", "class"], "wall", "$width.wall", "$width.barrier"],
+          20, ["*", 3, ["match", ["get", "class"], "wall", "$width.wall", "$width.barrier"]]
+        ],
+        "line-opacity": "$opacity.barrier"
+      }
+    }
+  ]
+}

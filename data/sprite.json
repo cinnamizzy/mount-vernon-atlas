@@ -1,0 +1,177 @@
+{
+ "pat-turf": {
+  "x": 1,
+  "y": 1,
+  "width": 48,
+  "height": 48,
+  "pixelRatio": 1
+ },
+ "pat-park": {
+  "x": 50,
+  "y": 1,
+  "width": 48,
+  "height": 48,
+  "pixelRatio": 1
+ },
+ "pat-woodland": {
+  "x": 99,
+  "y": 1,
+  "width": 48,
+  "height": 48,
+  "pixelRatio": 1
+ },
+ "pat-scrub": {
+  "x": 148,
+  "y": 1,
+  "width": 48,
+  "height": 48,
+  "pixelRatio": 1
+ },
+ "pat-garden": {
+  "x": 197,
+  "y": 1,
+  "width": 48,
+  "height": 48,
+  "pixelRatio": 1
+ },
+ "pat-orchard": {
+  "x": 1,
+  "y": 50,
+  "width": 48,
+  "height": 48,
+  "pixelRatio": 1
+ },
+ "pat-farmland": {
+  "x": 50,
+  "y": 50,
+  "width": 48,
+  "height": 48,
+  "pixelRatio": 1
+ },
+ "pat-wetland": {
+  "x": 99,
+  "y": 50,
+  "width": 48,
+  "height": 48,
+  "pixelRatio": 1
+ },
+ "pat-water": {
+  "x": 148,
+  "y": 50,
+  "width": 48,
+  "height": 48,
+  "pixelRatio": 1
+ },
+ "pat-recreation": {
+  "x": 197,
+  "y": 50,
+  "width": 48,
+  "height": 48,
+  "pixelRatio": 1
+ },
+ "pat-built_up": {
+  "x": 1,
+  "y": 99,
+  "width": 48,
+  "height": 48,
+  "pixelRatio": 1
+ },
+ "pat-cemetery": {
+  "x": 50,
+  "y": 99,
+  "width": 48,
+  "height": 48,
+  "pixelRatio": 1
+ },
+ "pat-parking": {
+  "x": 99,
+  "y": 99,
+  "width": 48,
+  "height": 48,
+  "pixelRatio": 1
+ },
+ "pat-building": {
+  "x": 148,
+  "y": 99,
+  "width": 48,
+  "height": 48,
+  "pixelRatio": 1
+ },
+ "icon-mansion": {
+  "x": 197,
+  "y": 99,
+  "width": 24,
+  "height": 24,
+  "pixelRatio": 1
+ },
+ "icon-garden": {
+  "x": 1,
+  "y": 148,
+  "width": 24,
+  "height": 24,
+  "pixelRatio": 1
+ },
+ "icon-memorial": {
+  "x": 26,
+  "y": 148,
+  "width": 24,
+  "height": 24,
+  "pixelRatio": 1
+ },
+ "icon-agriculture": {
+  "x": 51,
+  "y": 148,
+  "width": 24,
+  "height": 24,
+  "pixelRatio": 1
+ },
+ "icon-working": {
+  "x": 76,
+  "y": 148,
+  "width": 24,
+  "height": 24,
+  "pixelRatio": 1
+ },
+ "icon-visitor": {
+  "x": 101,
+  "y": 148,
+  "width": 24,
+  "height": 24,
+  "pixelRatio": 1
+ },
+ "icon-river": {
+  "x": 126,
+  "y": 148,
+  "width": 24,
+  "height": 24,
+  "pixelRatio": 1
+ },
+ "tree-oak": {
+  "x": 151,
+  "y": 148,
+  "width": 40,
+  "height": 40,
+  "pixelRatio": 1
+ },
+ "tree-elm": {
+  "x": 192,
+  "y": 148,
+  "width": 40,
+  "height": 40,
+  "pixelRatio": 1
+ },
+ "tree-pine": {
+  "x": 1,
+  "y": 189,
+  "width": 40,
+  "height": 40,
+  "pixelRatio": 1
+ },
+ "tree-shrub": {
+  "x": 42,
+  "y": 189,
+  "width": 40,
+  "height": 40,
+  "pixelRatio": 1
+ }
+}

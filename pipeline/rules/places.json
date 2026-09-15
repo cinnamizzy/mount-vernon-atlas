@@ -1,0 +1,41 @@
+{
+  "$comment": "Editorial content, kept separate from tag classification because this is what the estate would review and approve. Highlights are curated and ordered; everything else is discovered from named building footprints inside the core bounds.",
+
+  "core_bounds": {
+    "$comment": "[west, south, east, north] - named buildings whose centroid falls inside become minor places.",
+    "bbox": [-77.0912, 38.7040, -77.0838, 38.7107]
+  },
+
+  "highlights": [
+    { "id": "way/189853023", "name": "The Mansion", "category": "Historic house" },
+    { "id": "way/232717210", "name": "Upper Garden", "category": "Gardens & grounds" },
+    { "id": "way/232717207", "name": "Lower Garden", "category": "Gardens & grounds" },
+    { "id": "way/43932369", "name": "Bowling Green", "category": "Gardens & grounds" },
+    { "id": "way/334219851", "name": "Washington's Tomb", "category": "Memorials & remembrance" },
+    { "id": "node/2410476835", "name": "Slave Memorial", "category": "Memorials & remembrance" },
+    { "id": "way/232718150", "name": "Old Tomb", "category": "Memorials & remembrance" },
+    { "id": "way/232718134", "name": "The Farm", "category": "Agriculture & working life" },
+    { "id": "way/232605898", "name": "16-Sided Barn", "category": "Agriculture & working life" },
+    { "id": "way/232605874", "name": "Wharf", "category": "Along the river" },
+    { "id": "way/189853024", "name": "Greenhouse & quarters", "category": "Historic working spaces" },
+    { "id": "way/232715247", "name": "Ford Orientation Center", "category": "Visitor facilities" },
+    { "id": "way/122023877", "name": "Museum & Education Center", "category": "Visitor facilities" },
+    { "id": "way/232605866", "name": "Blacksmith Shop", "category": "Historic working spaces" },
+    { "id": "way/232605900", "name": "Kitchen", "category": "Historic working spaces" },
+    { "id": "way/232718129", "name": "Fruit Garden & Nursery", "category": "Gardens & grounds" }
+  ],
+
+  "$comment_categories": "Applied in order to auto-discovered places; first matching pattern wins. Case-insensitive regex against the source name. Replace with estate-approved categories when available.",
+  "category_rules": [
+    { "pattern": "tomb|memorial|burial", "category": "Memorials & remembrance" },
+    { "pattern": "museum|education|orientation|library|administration|gate|entrance|interpretive|restroom|shop|ticket", "category": "Visitor facilities" },
+    { "pattern": "barn|sheep|hog|oxen|paddock|chicken|shelter|batteau|farm|stable|coach|dung", "category": "Agriculture & working life" },
+    { "pattern": "garden|necessary|bowling|greenhouse|nursery", "category": "Gardens & grounds" },
+    { "pattern": "wharf|river|landing", "category": "Along the river" },
+    { "pattern": "mansion", "category": "Historic house" }
+  ],
+  "default_category": "Historic working spaces",
+
+  "$comment_audio": "One empty slot per place for the host audio-tour app to populate. No audio content is supplied by this project.",
+  "audio_url_default": null
+}

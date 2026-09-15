@@ -1,0 +1,40 @@
+{
+  "$comment": "Drawn canopy over the woodland wash, the way a pictorial map builds a forest: a flat tint underneath, individual trees stamped on top. Positions come from pipeline/scatter.py and are DECORATIVE - OpenStreetMap has only 6 individual trees for this estate, so these are generated, not surveyed.",
+
+  "$comment_draw_order": "symbol-sort-key uses the `order` property, which scatter.py assigns north-to-south, so nearer canopies overlap those behind them instead of sorting arbitrarily.",
+
+  "$comment_zoom": "Hidden below z15 - three thousand symbols at estate zoom is noise, and the woodland wash already reads as forest at that scale.",
+
+  "label": "Trees",
+  "legend": [
+    { "label": "Tree canopy (drawn, not surveyed)", "swatch": "dot", "color": "$color.landcover.woodland" }
+  ],
+
+  "layers": [
+    {
+      "id": "trees-canopy",
+      "type": "symbol",
+      "source": "trees",
+      "minzoom": 15,
+      "layout": {
+        "icon-image": ["get", "sprite"],
+        "icon-size": [
+          "interpolate", ["linear"], ["zoom"],
+          15, ["*", 0.10, ["get", "scale"]],
+          17, ["*", 0.30, ["get", "scale"]],
+          19, ["*", 0.80, ["get", "scale"]],
+          21, ["*", 2.20, ["get", "scale"]]
+        ],
+        "icon-anchor": "bottom",
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-padding": 0,
+        "symbol-sort-key": ["get", "order"],
+        "symbol-z-order": "source"
+      },
+      "paint": {
+        "icon-opacity": ["interpolate", ["linear"], ["zoom"], 15, 0, 15.8, 1]
+      }
+    }
+  ]
+}

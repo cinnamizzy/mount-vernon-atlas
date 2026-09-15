@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mount Vernon Estate Atlas</title>
+<!-- MapLibre GL 4.7.1, vendored in vendor/ (BSD-3, see MAPLIBRE-LICENSE.txt).
+     Served locally rather than from a CDN so the map works on restricted
+     networks and keeps no third-party runtime dependency. -->
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="vendor/maplibre-gl.css">
+<link rel="stylesheet" href="src/app.css">
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <span class="seal">MV</span>
+    <span><small>GEORGE WASHINGTON&rsquo;S</small><strong>Mount Vernon</strong></span>
+  </div>
+  <div class="head-right">
+    <span class="edition">ESTATE ATLAS</span>
+    <button id="toggle-3d" aria-pressed="false" title="Buildings in 3D, from lidar">3D</button>
+    <button id="tour-button" aria-expanded="false">Route <span id="stop-count">0</span></button>
+    <button id="layers-button" aria-expanded="false">Layers</button>
+  </div>
+</header>
+
+<main>
+  <div id="map"></div>
+
+  <section id="tour" hidden aria-label="Your route">
+    <h3>Your route</h3>
+
+    <label class="field">
+      <span>Route type</span>
+      <select id="route-profile"></select>
+    </label>
+    <p id="profile-note" class="fine"></p>
+
+    <label class="check">
+      <input type="checkbox" id="route-from-location" disabled>
+      Start from my location
+    </label>
+
+    <ol id="stop-list"></ol>
+    <div id="route-summary"></div>
+
+    <div class="actions">
+      <button id="route-export" class="primary" disabled>Download GeoJSON</button>
+      <button id="route-clear" disabled>Clear</button>
+    </div>
+
+    <p class="fine">Planning preview. Routes follow mapped paths only. Step-free
+    status, closures and visitor access require estate review.</p>
+  </section>
+
+  <div id="layers" hidden>
+    <h3>Map layers</h3>
+    <div id="layer-list"></div>
+    <p class="fine">Layer list and legend are both generated from the style. A legend
+    key cannot describe something the map is not drawing.</p>
+  </div>
+
+  <aside class="legend" aria-label="Map legend">
+    <h3>Legend</h3>
+    <div id="legend-body"></div>
+  </aside>
+
+  <div id="status" class="status">Loading style&hellip;</div>
+
+  <div class="provenance">
+    OPEN DATA EDITION &middot; NOT SURVEYED &middot; FIELD REVIEW PENDING
+  </div>
+</main>
+
+<script src="vendor/maplibre-gl.js"></script>
+<script type="module" src="src/map.js"></script>
+</body>
+</html>

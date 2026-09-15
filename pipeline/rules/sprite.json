@@ -1,0 +1,250 @@
+{
+  "$comment": "Spec for the MapLibre sprite sheet. EDIT THIS, then run `py pipeline/sprite.py`. Patterns are tiled by fill-pattern and must be seamless - every primitive wraps at the tile edge. Icons are drawn in normalised 0-1 coordinates with y pointing down.",
+
+  "$comment_look": "Hand-tinted historical estate map: saturated pigment laid unevenly, granulating into the paper, with crisp ink linework drawn over it. Each land class is a `wash` (uneven tint from tileable fractal noise) plus `granulation` (fine settling), then any structural marks - furrows, orchard ranks, hatching - laid on top the way an engraver would.",
+
+  "pattern_size": 48,
+  "icon_size": 24,
+  "pixel_ratio": 2,
+  "$comment_ratio": "Everything is rendered at this multiple and declared with pixelRatio, so it stays crisp on phones.",
+
+  "paper": {
+    "$comment": "Laid over the entire map by CSS multiply blend, so washes, ink and labels share one sheet. Larger than the patterns so the grain does not visibly repeat.",
+    "size": 256,
+    "color": "#fbf6e9",
+    "cells": 4,
+    "tooth_cells": 44,
+    "fibre_strength": 0.085,
+    "tooth_strength": 0.055,
+    "seed": 7
+  },
+
+  "patterns": {
+    "turf": {
+      "$comment": "Open lawn - the estate's dominant surface. Sap green, laid thin.",
+      "base": "#b9cc63",
+      "marks": [
+        { "type": "wash", "color": "#9fb843", "alpha": 0.55, "cells": 3, "seed": 101, "contrast": 1.3 },
+        { "type": "wash", "color": "#cdd989", "alpha": 0.35, "cells": 5, "seed": 102 },
+        { "type": "granulation", "cells": 16, "strength": 0.10, "seed": 103 }
+      ]
+    },
+    "park": {
+      "base": "#aec65c",
+      "marks": [
+        { "type": "wash", "color": "#94b33e", "alpha": 0.5, "cells": 3, "seed": 111, "contrast": 1.2 },
+        { "type": "granulation", "cells": 15, "strength": 0.10, "seed": 112 }
+      ]
+    },
+    "woodland": {
+      "$comment": "Deeper green, with canopy stipple over the wash.",
+      "base": "#7ea052",
+      "marks": [
+        { "type": "wash", "color": "#5f8540", "alpha": 0.6, "cells": 2, "seed": 121, "contrast": 1.4 },
+        { "type": "speckle", "count": 30, "radius": [3.0, 5.5], "color": "#5b823c", "alpha": 0.42, "seed": 122 },
+        { "type": "speckle", "count": 22, "radius": [1.6, 3.0], "color": "#456a2c", "alpha": 0.34, "seed": 123 },
+        { "type": "granulation", "cells": 18, "strength": 0.14, "seed": 124 }
+      ]
+    },
+    "scrub": {
+      "base": "#a3bb63",
+      "marks": [
+        { "type": "wash", "color": "#87a449", "alpha": 0.5, "cells": 3, "seed": 131 },
+        { "type": "speckle", "count": 34, "radius": [1.2, 2.4], "color": "#6d8a3c", "alpha": 0.38, "seed": 132 },
+        { "type": "granulation", "cells": 16, "strength": 0.12, "seed": 133 }
+      ]
+    },
+    "garden": {
+      "$comment": "Planting beds - bright wash with fine ruled rows over it.",
+      "base": "#c3d46a",
+      "marks": [
+        { "type": "wash", "color": "#a8c247", "alpha": 0.5, "cells": 4, "seed": 141 },
+        { "type": "lines", "angle": 0, "spacing": 6, "width": 1.5, "color": "#8aa63f", "alpha": 0.55 },
+        { "type": "lines", "angle": 90, "spacing": 24, "width": 1.1, "color": "#7d9a37", "alpha": 0.35 },
+        { "type": "granulation", "cells": 18, "strength": 0.10, "seed": 142 }
+      ]
+    },
+    "orchard": {
+      "$comment": "Planted in ranks - regular, unlike woodland.",
+      "base": "#b4c95f",
+      "marks": [
+        { "type": "wash", "color": "#9bb544", "alpha": 0.45, "cells": 3, "seed": 151 },
+        { "type": "grid_dots", "spacing": 24, "radius": 4.4, "offset": [12, 12], "color": "#5f8540", "alpha": 0.62 },
+        { "type": "grid_dots", "spacing": 24, "radius": 1.8, "offset": [12, 12], "color": "#44642c", "alpha": 0.45 },
+        { "type": "granulation", "cells": 16, "strength": 0.10, "seed": 152 }
+      ]
+    },
+    "farmland": {
+      "$comment": "Ochre earth with ploughed furrows.",
+      "base": "#dcb765",
+      "marks": [
+        { "type": "wash", "color": "#c79f4a", "alpha": 0.5, "cells": 3, "seed": 161, "contrast": 1.2 },
+        { "type": "lines", "angle": 0, "spacing": 8, "width": 2.0, "color": "#b88e3c", "alpha": 0.5 },
+        { "type": "granulation", "cells": 15, "strength": 0.12, "seed": 162 }
+      ]
+    },
+    "wetland": {
+      "base": "#9dc3a4",
+      "marks": [
+        { "type": "wash", "color": "#7fae8b", "alpha": 0.5, "cells": 3, "seed": 171 },
+        { "type": "lines", "angle": 0, "spacing": 10, "width": 1.6, "color": "#6f9ea0", "alpha": 0.5, "dash": [7, 6] },
+        { "type": "granulation", "cells": 16, "strength": 0.10, "seed": 172 }
+      ]
+    },
+    "water": {
+      "$comment": "Prussian blue, laid with visible brush pooling.",
+      "base": "#7fb2cf",
+      "marks": [
+        { "type": "wash", "color": "#4f8fb5", "alpha": 0.6, "cells": 2, "seed": 181, "contrast": 1.4 },
+        { "type": "wash", "color": "#a6cbdf", "alpha": 0.35, "cells": 5, "seed": 182 },
+        { "type": "lines", "angle": 0, "spacing": 12, "width": 1.4, "color": "#3f7fa6", "alpha": 0.32, "dash": [9, 7] },
+        { "type": "granulation", "cells": 14, "strength": 0.12, "seed": 183 }
+      ]
+    },
+    "recreation": {
+      "base": "#bfcf7e",
+      "marks": [
+        { "type": "wash", "color": "#a7bb5f", "alpha": 0.45, "cells": 3, "seed": 191 },
+        { "type": "granulation", "cells": 16, "strength": 0.10, "seed": 192 }
+      ]
+    },
+    "built_up": {
+      "base": "#ddcfb4",
+      "marks": [
+        { "type": "wash", "color": "#c9b894", "alpha": 0.45, "cells": 3, "seed": 201 },
+        { "type": "granulation", "cells": 16, "strength": 0.10, "seed": 202 }
+      ]
+    },
+    "cemetery": {
+      "base": "#b6c68c",
+      "marks": [
+        { "type": "wash", "color": "#9db070", "alpha": 0.45, "cells": 3, "seed": 211 },
+        { "type": "granulation", "cells": 16, "strength": 0.10, "seed": 212 }
+      ]
+    },
+    "parking": {
+      "$comment": "Metalled yard - grey wash, aggregate speckle, and ruled bay markings across the aisles the way they read from the air.",
+      "base": "#cfc6b0",
+      "marks": [
+        { "type": "wash", "color": "#b8ad93", "alpha": 0.5, "cells": 4, "seed": 221 },
+        { "type": "speckle", "count": 60, "radius": [0.8, 1.6], "color": "#9e9378", "alpha": 0.35, "seed": 222 },
+        { "type": "lines", "angle": 90, "spacing": 6, "width": 1.1, "color": "#f2ead8", "alpha": 0.55, "dash": [9, 15] },
+        { "type": "lines", "angle": 0, "spacing": 24, "width": 1.3, "color": "#8f856c", "alpha": 0.40 },
+        { "type": "granulation", "cells": 18, "strength": 0.10, "seed": 223 }
+      ]
+    },
+    "building": {
+      "$comment": "Venetian red roof wash for building footprints.",
+      "base": "#c4714c",
+      "marks": [
+        { "type": "wash", "color": "#a8542f", "alpha": 0.55, "cells": 4, "seed": 231, "contrast": 1.3 },
+        { "type": "granulation", "cells": 18, "strength": 0.14, "seed": 232 }
+      ]
+    }
+  },
+
+  "$comment_trees": "Drawn canopy symbols, scattered across woodland and parkland by pipeline/scatter.py. Built from stacked circles lit from the upper left, the way a pictorial map draws a tree: a dark mass, a mid tone, then a highlight, over a trunk. Rendered larger than the category icons because they carry the illustration.",
+  "tree_size": 40,
+  "trees": {
+    "tree-oak": {
+      "color": "#40682a",
+      "shapes": [
+        { "type": "polygon", "points": [[0.455, 0.58], [0.545, 0.58], [0.565, 0.95], [0.435, 0.95]], "color": "#5d4026" },
+        { "type": "circle", "center": [0.56, 0.52], "radius": 0.30, "color": "#335621" },
+        { "type": "circle", "center": [0.50, 0.46], "radius": 0.34, "color": "#40682a" },
+        { "type": "circle", "center": [0.38, 0.40], "radius": 0.22, "color": "#4f7f33" },
+        { "type": "circle", "center": [0.42, 0.31], "radius": 0.15, "color": "#65993f" },
+        { "type": "circle", "center": [0.36, 0.34], "radius": 0.09, "color": "#7cb04c" }
+      ]
+    },
+    "tree-elm": {
+      "$comment": "Taller, narrower crown - varies the woodland so it does not read as one stamp.",
+      "color": "#3c6428",
+      "shapes": [
+        { "type": "polygon", "points": [[0.46, 0.60], [0.54, 0.60], [0.56, 0.96], [0.44, 0.96]], "color": "#573c23" },
+        { "type": "circle", "center": [0.58, 0.46], "radius": 0.25, "color": "#31521f" },
+        { "type": "circle", "center": [0.50, 0.38], "radius": 0.30, "color": "#3c6428" },
+        { "type": "circle", "center": [0.44, 0.50], "radius": 0.22, "color": "#447230" },
+        { "type": "circle", "center": [0.40, 0.29], "radius": 0.14, "color": "#5e9139" },
+        { "type": "circle", "center": [0.35, 0.36], "radius": 0.08, "color": "#74a848" }
+      ]
+    },
+    "tree-pine": {
+      "$comment": "Conifer - stacked tiers rather than a round mass.",
+      "color": "#2f5426",
+      "shapes": [
+        { "type": "polygon", "points": [[0.47, 0.66], [0.53, 0.66], [0.55, 0.97], [0.45, 0.97]], "color": "#4d3520" },
+        { "type": "polygon", "points": [[0.50, 0.44], [0.78, 0.74], [0.22, 0.74]], "color": "#2f5426" },
+        { "type": "polygon", "points": [[0.50, 0.26], [0.72, 0.56], [0.28, 0.56]], "color": "#386330" },
+        { "type": "polygon", "points": [[0.50, 0.08], [0.66, 0.38], [0.34, 0.38]], "color": "#437439" },
+        { "type": "polygon", "points": [[0.50, 0.10], [0.58, 0.34], [0.44, 0.34]], "color": "#558c46" }
+      ]
+    },
+    "tree-shrub": {
+      "$comment": "Low mass for hedgerow edges and young planting.",
+      "color": "#4a7a30",
+      "shapes": [
+        { "type": "circle", "center": [0.60, 0.66], "radius": 0.22, "color": "#3b6327" },
+        { "type": "circle", "center": [0.44, 0.62], "radius": 0.26, "color": "#4a7a30" },
+        { "type": "circle", "center": [0.36, 0.55], "radius": 0.16, "color": "#5d9440" },
+        { "type": "circle", "center": [0.40, 0.49], "radius": 0.09, "color": "#74ad51" }
+      ]
+    }
+  },
+
+  "$comment_icons": "Category markers. Shapes are lists of normalised points (0-1, y down) filled as polygons, plus optional circles. Keep them simple - they render at 24 px.",
+  "icons": {
+    "mansion": {
+      "color": "#5d3a22",
+      "shapes": [
+        { "type": "polygon", "points": [[0.5, 0.12], [0.94, 0.46], [0.82, 0.46], [0.82, 0.88], [0.18, 0.88], [0.18, 0.46], [0.06, 0.46]] },
+        { "type": "polygon", "points": [[0.40, 0.58], [0.60, 0.58], [0.60, 0.88], [0.40, 0.88]], "color": "#f6ecd8" }
+      ]
+    },
+    "garden": {
+      "color": "#3d6b2a",
+      "shapes": [
+        { "type": "circle", "center": [0.5, 0.36], "radius": 0.24 },
+        { "type": "circle", "center": [0.29, 0.52], "radius": 0.16 },
+        { "type": "circle", "center": [0.71, 0.52], "radius": 0.16 },
+        { "type": "polygon", "points": [[0.46, 0.55], [0.54, 0.55], [0.54, 0.92], [0.46, 0.92]] }
+      ]
+    },
+    "memorial": {
+      "color": "#55483a",
+      "shapes": [
+        { "type": "polygon", "points": [[0.5, 0.06], [0.63, 0.30], [0.60, 0.82], [0.40, 0.82], [0.37, 0.30]] },
+        { "type": "polygon", "points": [[0.28, 0.82], [0.72, 0.82], [0.72, 0.94], [0.28, 0.94]] }
+      ]
+    },
+    "agriculture": {
+      "color": "#8a3f21",
+      "shapes": [
+        { "type": "polygon", "points": [[0.5, 0.10], [0.92, 0.38], [0.92, 0.90], [0.08, 0.90], [0.08, 0.38]] },
+        { "type": "polygon", "points": [[0.42, 0.56], [0.58, 0.56], [0.58, 0.90], [0.42, 0.90]], "color": "#f6ecd8" }
+      ]
+    },
+    "working": {
+      "color": "#4a3a2a",
+      "shapes": [
+        { "type": "polygon", "points": [[0.18, 0.20], [0.72, 0.20], [0.72, 0.40], [0.18, 0.40]] },
+        { "type": "polygon", "points": [[0.40, 0.38], [0.56, 0.38], [0.56, 0.92], [0.40, 0.92]] }
+      ]
+    },
+    "visitor": {
+      "color": "#26607f",
+      "shapes": [
+        { "type": "circle", "center": [0.5, 0.5], "radius": 0.44 },
+        { "type": "circle", "center": [0.5, 0.27], "radius": 0.07, "color": "#f6ecd8" },
+        { "type": "polygon", "points": [[0.43, 0.40], [0.57, 0.40], [0.57, 0.78], [0.43, 0.78]], "color": "#f6ecd8" }
+      ]
+    },
+    "river": {
+      "color": "#2b6b80",
+      "shapes": [
+        { "type": "polygon", "points": [[0.06, 0.40], [0.28, 0.30], [0.50, 0.42], [0.72, 0.30], [0.94, 0.40], [0.94, 0.52], [0.72, 0.42], [0.50, 0.54], [0.28, 0.42], [0.06, 0.52]] },
+        { "type": "polygon", "points": [[0.06, 0.62], [0.28, 0.52], [0.50, 0.64], [0.72, 0.52], [0.94, 0.62], [0.94, 0.74], [0.72, 0.64], [0.50, 0.76], [0.28, 0.64], [0.06, 0.74]] }
+      ]
+    }
+  }
+}

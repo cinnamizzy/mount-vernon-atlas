@@ -1,0 +1,88 @@
+{
+  "$comment": "Every input to this project, with its license and terms. Nothing enters the build without an entry here. Review before publishing.",
+  "sources": {
+    "openstreetmap": {
+      "name": "OpenStreetMap",
+      "license": "ODbL-1.0",
+      "license_url": "https://www.openstreetmap.org/copyright",
+      "url": "https://overpass-api.de/api/interpreter",
+      "retrieved": "2026-09-14",
+      "retrieved_via": "pipeline/fetch_osm.py",
+      "attribution_required": true,
+      "attribution": "\u00a9 OpenStreetMap contributors",
+      "share_alike": true,
+      "notes": "Derived geographic data remains subject to ODbL. Attribution must be visible in the deployed map.",
+      "status": "approved"
+    },
+    "usgs_3dep_elevation": {
+      "name": "USGS 3D Elevation Program (3DEP) Bare Earth DEM - point samples",
+      "license": "public domain (US Government work)",
+      "license_url": "https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits",
+      "url": "https://elevation.nationalmap.gov/arcgis/rest/services/3DEPElevation/ImageServer/getSamples",
+      "retrieved": "2026-09-14",
+      "retrieved_via": "pipeline/elevation.py",
+      "resolution_m": 1,
+      "attribution_required": false,
+      "attribution": "Elevation: USGS 3DEP",
+      "notes": "Ground elevation for 2,812 routing nodes and 1,173 building centroids; range -0.5 m to 38.5 m. Bare earth - gives terrain, NOT building height. Sampled offline into data/elevation.json, so there is no runtime dependency.",
+      "status": "approved"
+    },
+    "maplibre_gl": {
+      "name": "MapLibre GL JS 4.7.1",
+      "license": "BSD-3-Clause",
+      "url": "https://github.com/maplibre/maplibre-gl-js",
+      "vendored_at": "vendor/maplibre-gl.js",
+      "notes": "Served from the repository rather than a CDN, so the map works on restricted networks and carries no third-party runtime dependency. License text at vendor/MAPLIBRE-LICENSE.txt.",
+      "status": "approved"
+    },
+    "fairfax_county_gis": {
+      "name": "Fairfax County GIS open data",
+      "license": "UNVERIFIED - check terms before use",
+      "license_url": "https://www.fairfaxcounty.gov/maps/open-geospatial-data",
+      "url": null,
+      "retrieved": null,
+      "attribution_required": null,
+      "notes": "Candidate source for orthoimagery and possibly lidar. Confirm the specific dataset license before any use, including tracing.",
+      "status": "unverified"
+    },
+    "mount_vernon_estate": {
+      "name": "Mount Vernon Ladies' Association - institutional data",
+      "license": "by agreement",
+      "url": null,
+      "retrieved": null,
+      "notes": "Requested: site survey / CAD base plan, building heights and roof forms, garden layouts, accessible route inventory, closures, approved place names, any lidar or drone survey. Supersedes derived data where supplied.",
+      "status": "requested"
+    }
+  },
+  "removed": {
+    "usgs_3dep_hillshade": {
+      "name": "USGS 3DEP Hillshade Multidirectional - WMS raster",
+      "reason": "Shaded relief was tried as a base layer and removed by art direction. The map is deliberately flat 2D artwork - hand-tinted washes and crisp ink linework - so terrain shading works against the look.",
+      "note": "The point-sampled elevation in data/elevation.json is a separate thing and is still used, for route ascent and gradient advisories. If relief is ever wanted again, the WMS layer was '3DEPElevation:Hillshade Multidirectional' and CORS was open.",
+      "status": "removed"
+    }
+  },
+
+  "rejected": {
+    "google_maps_aerial": {
+      "name": "Google Maps 3D aerial imagery",
+      "reason": "Tracing geometry from Google Maps imagery violates Google's Terms of Service, and derived data inherits that restriction. This is why OpenStreetMap prohibits Google-derived tracing.",
+      "affected_prototype_files": [
+        "MVmap-main/dist/gardens-2026.geojson",
+        "MVmap-main/dist/gardens.js",
+        "MVmap-main/source/trace_upper.py",
+        "MVmap-main/source/trace_lower.py",
+        "MVmap-main/source/trace_fruit.py",
+        "MVmap-main/source/build_gardens.py"
+      ],
+      "action": "Do not port. Garden detail must be re-derived from estate-supplied plans or a licensed imagery source.",
+      "status": "excluded"
+    },
+    "eagleview_2025": {
+      "name": "Fairfax County / EagleView 2025 aerial (landscape-2025.geojson)",
+      "reason": "License terms not verified. EagleView imagery is commonly licensed to the county rather than placed in the public domain.",
+      "action": "Confirm terms before porting the 165 tree-candidate features from the prototype.",
+      "status": "on_hold"
+    }
+  }
+}

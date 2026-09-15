@@ -1,0 +1,101 @@
+{
+  "$comment": "16 curated highlights (numbered, always visible) plus 29 discovered named buildings inside the core bounds (minor, appear from z17.5). Order and categories are editorial and live in pipeline/rules/places.json.",
+  "label": "Places",
+  "legend": [
+    { "label": "Numbered highlight", "swatch": "dot", "color": "$color.place.highlight" },
+    { "label": "Other named place (by category)", "swatch": "dot", "color": "$color.place.minor" }
+  ],
+
+  "layers": [
+    {
+      "$comment": "Minor places carry a category icon rather than a plain dot. The numbered circles stay for the 16 curated highlights, so the two tiers read differently at a glance.",
+      "id": "places-minor-icon",
+      "type": "symbol",
+      "source": "places",
+      "minzoom": 17.5,
+      "filter": ["==", ["get", "class"], "place"],
+      "layout": {
+        "icon-image": [
+          "match", ["get", "category"],
+          "Historic house", "icon-mansion",
+          "Gardens & grounds", "icon-garden",
+          "Memorials & remembrance", "icon-memorial",
+          "Agriculture & working life", "icon-agriculture",
+          "Along the river", "icon-river",
+          "Visitor facilities", "icon-visitor",
+          "Historic working spaces", "icon-working",
+          "icon-working"
+        ],
+        "icon-size": ["interpolate", ["linear"], ["zoom"], 17.5, 0.42, 20, 0.72],
+        "icon-allow-overlap": false,
+        "icon-optional": true
+      }
+    },
+    {
+      "id": "places-minor-label",
+      "type": "symbol",
+      "source": "places",
+      "minzoom": 18,
+      "filter": ["==", ["get", "class"], "place"],
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-size": "$text_size.place_minor",
+        "text-offset": [0, 1.1],
+        "text-anchor": "top",
+        "text-max-width": 9,
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "$color.text.secondary",
+        "text-halo-color": "$color.text.halo",
+        "text-halo-width": 1.8
+      }
+    },
+    {
+      "id": "places-highlight-dot",
+      "type": "circle",
+      "source": "places",
+      "filter": ["==", ["get", "class"], "highlight"],
+      "paint": {
+        "circle-radius": ["interpolate", ["linear"], ["zoom"], 14, 5, 17, 9, 20, 14],
+        "circle-color": "$color.place.highlight",
+        "circle-stroke-color": "$color.text.halo",
+        "circle-stroke-width": 2
+      }
+    },
+    {
+      "id": "places-highlight-number",
+      "type": "symbol",
+      "source": "places",
+      "minzoom": 15,
+      "filter": ["==", ["get", "class"], "highlight"],
+      "layout": {
+        "text-field": ["to-string", ["get", "order"]],
+        "text-size": ["interpolate", ["linear"], ["zoom"], 15, 9, 18, 12],
+        "text-allow-overlap": true,
+        "text-ignore-placement": true
+      },
+      "paint": { "text-color": "$color.place.highlight_text" }
+    },
+    {
+      "id": "places-highlight-label",
+      "type": "symbol",
+      "source": "places",
+      "minzoom": 15.5,
+      "filter": ["==", ["get", "class"], "highlight"],
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-size": "$text_size.place_highlight",
+        "text-offset": [0, 1.3],
+        "text-anchor": "top",
+        "text-max-width": 10,
+        "text-optional": true
+      },
+      "paint": {
+        "text-color": "$color.text.primary",
+        "text-halo-color": "$color.text.halo",
+        "text-halo-width": 2
+      }
+    }
+  ]
+}

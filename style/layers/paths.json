@@ -1,0 +1,108 @@
+{
+  "$comment": "Casings first, then fills, so junctions read as one continuous surface. Every class is visually distinct - this is the fix for 'so many different types of path and none match the legend'. Widths come from `base_width` on the feature (set in pipeline/rules/classification.json), so width and class are edited in one place. Steps get their own colour and rungs because they matter for accessibility. line-dasharray is NOT data-driven in MapLibre, so the advisory-surface dash is a separate filtered layer rather than a case expression.",
+
+  "label": "Paths & roads",
+  "legend": [
+    { "label": "Visitor path", "swatch": "line", "color": "$color.path.visitor_path", "casing": "$color.path.visitor_path_casing" },
+    { "label": "Gravel / unpaved", "swatch": "line-dashed", "color": "$color.path.visitor_path", "casing": "$color.path.visitor_path_casing" },
+    { "label": "Steps", "swatch": "line-rungs", "color": "$color.path.steps", "casing": "$color.path.steps_casing" },
+    { "label": "Trail", "swatch": "line", "color": "$color.path.trail", "casing": "$color.path.trail_casing" },
+    { "label": "Service road", "swatch": "line", "color": "$color.path.service_road", "casing": "$color.path.service_road_casing" },
+    { "label": "Public road", "swatch": "line", "color": "$color.path.public_road", "casing": "$color.path.public_road_casing" }
+  ],
+
+  "$width_ramp": {
+    "$comment": "Reused by the casing and fill layers. `$ref` splices this in.",
+    "interpolate_by_zoom": [
+      "interpolate", ["exponential", 1.5], ["zoom"],
+      14, ["*", 0.25, ["get", "base_width"]],
+      17, ["get", "base_width"],
+      20, ["*", 4, ["get", "base_width"]]
+    ]
+  },
+
+  "layers": [
+    {
+      "id": "paths-casing",
+      "type": "line",
+      "source": "paths",
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": [
+          "match", ["get", "class"],
+          "public_road", "$color.path.public_road_casing",
+          "service_road", "$color.path.service_road_casing",
+          "visitor_path", "$color.path.visitor_path_casing",
+          "trail", "$color.path.trail_casing",
+          "cycleway", "$color.path.cycleway_casing",
+          "steps", "$color.path.steps_casing",
+          "$color.path.visitor_path_casing"
+        ],
+        "line-width": [
+          "interpolate", ["exponential", 1.5], ["zoom"],
+          14, ["*", 0.25, ["+", ["get", "base_width"], "$width.casing_extra"]],
+          17, ["+", ["get", "base_width"], "$width.casing_extra"],
+          20, ["*", 4, ["+", ["get", "base_width"], "$width.casing_extra"]]
+        ]
+      }
+    },
+    {
+      "id": "paths-fill",
+      "type": "line",
+      "source": "paths",
+      "filter": ["all",
+        ["!=", ["get", "class"], "steps"],
+        ["!", ["get", "surface_advisory"]]
+      ],
+      "layout": { "line-cap": "round", "line-join": "round" },
+      "paint": {
+        "line-color": [
+          "match", ["get", "class"],
+          "public_road", "$color.path.public_road",
+          "service_road", "$color.path.service_road",
+          "visitor_path", "$color.path.visitor_path",
+          "trail", "$color.path.trail",
+          "cycleway", "$color.path.cycleway",
+          "$color.path.visitor_path"
+        ],
+        "line-width": { "$ref": "$width_ramp.interpolate_by_zoom" }
+      }
+    },
+    {
+      "$comment": "Gravel / unpaved / bare ground. Dashed so surface quality is visible on the map, which matters for wheeled access. Advisory only - not an accessibility assertion.",
+      "id": "paths-fill-advisory",
+      "type": "line",
+      "source": "paths",
+      "filter": ["all",
+        ["!=", ["get", "class"], "steps"],
+        ["get", "surface_advisory"]
+      ],
+      "layout": { "line-cap": "butt", "line-join": "round" },
+      "paint": {
+        "line-color": [
+          "match", ["get", "class"],
+          "public_road", "$color.path.public_road",
+          "service_road", "$color.path.service_road",
+          "visitor_path", "$color.path.visitor_path",
+          "trail", "$color.path.trail",
+          "cycleway", "$color.path.cycleway",
+          "$color.path.visitor_path"
+        ],
+        "line-width": { "$ref": "$width_ramp.interpolate_by_zoom" },
+        "line-dasharray": [3, 1.2]
+      }
+    },
+    {
+      "id": "paths-steps",
+      "type": "line",
+      "source": "paths",
+      "filter": ["==", ["get", "class"], "steps"],
+      "layout": { "line-cap": "butt" },
+      "paint": {
+        "line-color": "$color.path.steps",
+        "line-width": { "$ref": "$width_ramp.interpolate_by_zoom" },
+        "line-dasharray": [0.4, 0.4]
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+# Lidar point-cloud cache: 306 MB of LAZ tiles fetched from USGS by
+# pipeline/heights.py. Never commit this - GitHub caps single files at 100 MB
+# and this would bloat the repository for no benefit. It is a cache: delete it
+# and heights.py simply re-downloads what it needs.
+build/ept-cache/
+
+# Everything else in build/ IS committed on purpose:
+#   osm-raw.geojson  (1.0 MB)  the Overpass extract the layers are built from
+#   heights.json     (0.5 MB)  lidar-derived heights, so classify.py can be
+#                              re-run without repeating the 306 MB download
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/

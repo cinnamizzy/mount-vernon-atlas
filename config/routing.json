@@ -1,0 +1,48 @@
+{
+  "$comment": "App-side routing parameters. The PROFILE MEMBERSHIP of each path is not here - it is stamped onto every feature as `profiles` by pipeline/classify.py, from pipeline/rules/classification.json. One source of truth: to change which path classes a profile may use, edit the pipeline rules and re-run classify.py.",
+
+  "profiles": {
+    "visitor": {
+      "label": "Walking",
+      "description": "All mapped visitor paths, including steps.",
+      "pace_m_per_min": 72,
+      "$comment_pace": "About 4.3 km/h - a visiting pace on mixed surfaces, not a commuting pace."
+    },
+    "step_free": {
+      "label": "Step-free",
+      "description": "Excludes steps. Surface warnings are advisory and unverified.",
+      "pace_m_per_min": 50,
+      "$comment_pace": "About 3 km/h. Deliberately conservative."
+    }
+  },
+  "default_profile": "visitor",
+
+  "snap": {
+    "$comment": "A stop is snapped to the nearest routable node. Beyond warn_distance_m the map says so; beyond max_distance_m it refuses to pretend the stop is connected.",
+    "warn_distance_m": 30,
+    "max_distance_m": 120
+  },
+
+  "$comment_precision": "Decimal places used to join path vertices into graph nodes. Ways that do not share an exact coordinate stay disconnected - no proximity bridging, so a gap is reported rather than invented. Raising this splits more nodes apart; lowering it risks fusing genuinely separate ways.",
+  "coordinate_precision": 7,
+
+  "$comment_time": "Walking times are distance / pace. They ignore crowds and stop dwell time, and are labelled as estimates in the UI.",
+  "round_time_to_min": 1,
+
+  "gradient": {
+    "$comment": "Gradients come from the USGS 3DEP bare-earth DEM (pipeline/elevation.py) sampled at path vertices. They are ADVISORY ONLY and deliberately do NOT filter the step-free graph. Measured distribution across the estate: median 2%, p90 6.6%, p95 8.9%, max 53.5%.",
+
+    "$comment_why_not_a_filter": "Excluding edges above the ADA 8.33% ramp limit leaves only 8 of 16 highlights on one connected network (10% leaves 9; 15% leaves 15). Some of those gradients are real - the Mansion sits on a bluff about 37 m above the Potomac - but many are DEM artifacts: short vertex spacing amplifies sub-metre elevation noise, and boardwalks, culverts and retaining walls read as terrain. A hard filter would produce a step-free network that is both wrong and confidently presented. Real step-free routing needs an estate-supplied accessible-route inventory.",
+
+    "enabled": true,
+    "filters_routing": false,
+    "warn_above": 0.0833,
+    "$comment_warn": "1:12, the ADA maximum ramp slope. Sections above this are reported to the user as advisory, unverified.",
+
+    "smoothing_window_m": 10,
+    "$comment_smoothing": "Gradient is measured over a window this long rather than between adjacent vertices, which suppresses most of the sampling noise.",
+
+    "min_segment_m": 0.5,
+    "$comment_min_segment": "Segments shorter than this are ignored when computing gradient - the elevation difference is dominated by DEM noise."
+  }
+}

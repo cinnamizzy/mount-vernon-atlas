@@ -1,0 +1,142 @@
+{
+  "$comment": "Semantic classification rules. EDIT THIS FILE, not the Python, to change how source tags map to map classes. Re-run `py pipeline/classify.py` afterwards. The style layer keys on the `class` values produced here, never on raw OSM tags.",
+
+  "paths": {
+    "$comment": "OSM highway value -> semantic class. Anything not listed is ignored (street_lamp, bus_stop, crossing, turning_circle, traffic_signals, stop are nodes/furniture, not routes).",
+    "class_by_highway": {
+      "footway": "visitor_path",
+      "path": "visitor_path",
+      "pedestrian": "visitor_path",
+      "steps": "steps",
+      "track": "trail",
+      "bridleway": "trail",
+      "cycleway": "cycleway",
+      "service": "service_road",
+      "residential": "service_road",
+      "living_street": "service_road",
+      "unclassified": "service_road",
+      "primary": "public_road",
+      "primary_link": "public_road",
+      "secondary": "public_road",
+      "tertiary": "public_road",
+      "trunk": "public_road"
+    },
+    "$comment_width": "Base render width in pixels at zoom 17, stamped onto each feature as `base_width`. Lives here beside the class definition so width and class are edited together; the style just reads ['get','base_width'] and interpolates by zoom.",
+    "width_by_class": {
+      "public_road": 8,
+      "service_road": 5,
+      "visitor_path": 3.2,
+      "trail": 2.6,
+      "cycleway": 2.6,
+      "steps": 3.2
+    },
+    "default_width": 3.0,
+
+    "$comment_step_free": "Classes that are never step-free. Used to build the accessible routing profile. The prototype left `steps` routable in its accessible profile - that bug must not return.",
+    "not_step_free_classes": ["steps"],
+
+    "$comment_routable": "Classes that may appear in a walking route at all.",
+    "routable_classes": ["visitor_path", "steps", "trail", "cycleway", "service_road"],
+
+    "$comment_profiles": "Named routing profiles. Each lists the classes it will traverse.",
+    "profiles": {
+      "visitor": ["visitor_path", "steps", "trail", "cycleway", "service_road"],
+      "step_free": ["visitor_path", "trail", "cycleway", "service_road"]
+    },
+
+    "$comment_access": "Tag values that exclude a way from routing entirely.",
+    "excluded_access_values": ["no", "private"],
+    "access_keys_checked": ["access", "foot"],
+
+    "$comment_surface": "Surface values are passed through unchanged. Listed here so the style has a known vocabulary to work against.",
+    "known_surfaces": ["asphalt", "paving_stones", "gravel", "compacted", "paved", "unpaved", "concrete", "wood", "ground", "bricks", "brick"],
+
+    "$comment_step_free_surface": "Surfaces flagged as potentially unsuitable for wheeled access. Advisory only - requires estate validation, never asserted as fact.",
+    "advisory_surfaces": ["gravel", "ground", "unpaved"]
+  },
+
+  "parking": {
+    "$comment": "Parking is its own layer so it stops rendering as road-coloured asphalt, which is the prototype's most visible styling error.",
+    "amenity_values": ["parking", "parking_space"],
+    "class_by_amenity": {
+      "parking": "parking_lot",
+      "parking_space": "parking_space"
+    }
+  },
+
+  "buildings": {
+    "$comment": "Any feature carrying a `building` tag. 1,171 of 1,412 in the source are the untyped `building=yes`, so `class` is mostly a fallback. NO source building carries height, building:levels, roof:shape or roof:material - heights come from pipeline/heights.py (Phase 2).",
+    "class_by_building": {
+      "yes": "building",
+      "house": "residence",
+      "detached": "residence",
+      "semidetached_house": "residence",
+      "shed": "outbuilding",
+      "garage": "outbuilding",
+      "service": "outbuilding",
+      "roof": "shelter",
+      "tomb": "memorial",
+      "church": "civic",
+      "school": "civic",
+      "government": "civic",
+      "retail": "civic"
+    },
+    "default_class": "building"
+  },
+
+  "landcover": {
+    "$comment": "Polygons with landuse/leisure/natural and no building tag.",
+    "keys": ["landuse", "leisure", "natural"],
+    "class_by_value": {
+      "grass": "turf",
+      "grassland": "turf",
+      "meadow": "turf",
+      "village_green": "turf",
+      "garden": "garden",
+      "park": "park",
+      "nature_reserve": "park",
+      "forest": "woodland",
+      "wood": "woodland",
+      "scrub": "scrub",
+      "water": "water",
+      "swimming_pool": "water",
+      "wetland": "wetland",
+      "farmland": "farmland",
+      "farmyard": "farmland",
+      "orchard": "orchard",
+      "cemetery": "cemetery",
+      "pitch": "recreation",
+      "sports_centre": "recreation",
+      "recreation_ground": "recreation",
+      "playground": "recreation",
+      "bleachers": "recreation",
+      "residential": "built_up",
+      "industrial": "built_up",
+      "religious": "built_up"
+    },
+    "default_class": "landcover"
+  },
+
+  "barriers": {
+    "$comment": "Linear barriers. The prototype drew these by default while the legend described a different layer entirely.",
+    "class_by_barrier": {
+      "wall": "wall",
+      "city_wall": "wall",
+      "retaining_wall": "wall",
+      "fence": "fence",
+      "hedge": "hedge",
+      "guard_rail": "railing",
+      "handrail": "railing",
+      "kerb": "kerb"
+    },
+    "default_class": "barrier"
+  },
+
+  "provenance": {
+    "$comment": "Stamped onto every output feature. Keeps the prototype's best habit: nothing claims to be surveyed unless it is.",
+    "source": "openstreetmap",
+    "source_date": "2026-09-11",
+    "confidence": "medium",
+    "surveyed": false
+  }
+}

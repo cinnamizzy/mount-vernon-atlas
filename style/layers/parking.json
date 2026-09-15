@@ -1,0 +1,60 @@
+{
+  "$comment": "Parking is its own layer so it stops reading as road-coloured asphalt - the prototype's most visible styling error. The source carries real names (East Parking Area, Employee Parking, RV & East Parking Area) which the prototype discarded.",
+  "label": "Parking",
+  "legend": [
+    { "label": "Parking area", "swatch": "area", "color": "$color.parking.fill", "casing": "$color.parking.outline" }
+  ],
+
+  "layers": [
+    {
+      "id": "parking-fill",
+      "type": "fill",
+      "source": "parking",
+      "paint": {
+        "fill-color": [
+          "match", ["get", "class"],
+          "parking_space", "$color.parking.space",
+          "$color.parking.fill"
+        ],
+        "fill-opacity": "$opacity.parking"
+      }
+    },
+    {
+      "$comment": "Metalled yard wash - grey pigment with aggregate speckle.",
+      "id": "parking-wash",
+      "type": "fill",
+      "source": "parking",
+      "filter": ["==", ["get", "class"], "parking_lot"],
+      "paint": { "fill-pattern": "pat-parking" }
+    },
+    {
+      "id": "parking-outline",
+      "type": "line",
+      "source": "parking",
+      "layout": { "line-join": "round" },
+      "paint": {
+        "line-color": "$color.parking.outline",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 14, 0.4, 17, 1.0, 20, 2.2],
+        "line-dasharray": [4, 2.5]
+      }
+    },
+    {
+      "id": "parking-label",
+      "type": "symbol",
+      "source": "parking",
+      "minzoom": 16,
+      "filter": ["all", ["has", "name"], ["==", ["get", "class"], "parking_lot"]],
+      "layout": {
+        "text-field": ["get", "name"],
+        "text-size": "$text_size.parking",
+        "text-max-width": 8,
+        "text-padding": 4
+      },
+      "paint": {
+        "text-color": "$color.parking.label",
+        "text-halo-color": "$color.text.halo",
+        "text-halo-width": 1.5
+      }
+    }
+  ]
+}
