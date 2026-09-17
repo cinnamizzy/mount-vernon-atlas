@@ -1,80 +1,8 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Mount Vernon Estate Atlas</title>
-<!-- MapLibre GL 4.7.1, vendored in vendor/ (BSD-3, see MAPLIBRE-LICENSE.txt).
-     Served locally rather than from a CDN so the map works on restricted
-     networks and keeps no third-party runtime dependency. -->
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="vendor/maplibre-gl.css">
-<link rel="stylesheet" href="src/app.css">
-</head>
-<body>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#183b3c"><title>Mount Vernon | Estate Atlas</title><link rel="stylesheet" href="leaflet.css"><link rel="stylesheet" href="style.css?v=ed25"></head><body>
 
-<header>
-  <div class="brand">
-    <span class="seal">MV</span>
-    <span><small>GEORGE WASHINGTON&rsquo;S</small><strong>Mount Vernon</strong></span>
-  </div>
-  <div class="head-right">
-    <span class="edition">ESTATE ATLAS</span>
-    <button id="toggle-3d" aria-pressed="false" title="Buildings in 3D, from lidar">3D</button>
-    <button id="tour-button" aria-expanded="false">Route <span id="stop-count">0</span></button>
-    <button id="layers-button" aria-expanded="false">Layers</button>
-  </div>
-</header>
-
-<main>
-  <div id="map"></div>
-
-  <section id="tour" hidden aria-label="Your route">
-    <h3>Your route</h3>
-
-    <label class="field">
-      <span>Route type</span>
-      <select id="route-profile"></select>
-    </label>
-    <p id="profile-note" class="fine"></p>
-
-    <label class="check">
-      <input type="checkbox" id="route-from-location" disabled>
-      Start from my location
-    </label>
-
-    <ol id="stop-list"></ol>
-    <div id="route-summary"></div>
-
-    <div class="actions">
-      <button id="route-export" class="primary" disabled>Download GeoJSON</button>
-      <button id="route-clear" disabled>Clear</button>
-    </div>
-
-    <p class="fine">Planning preview. Routes follow mapped paths only. Step-free
-    status, closures and visitor access require estate review.</p>
-  </section>
-
-  <div id="layers" hidden>
-    <h3>Map layers</h3>
-    <div id="layer-list"></div>
-    <p class="fine">Layer list and legend are both generated from the style. A legend
-    key cannot describe something the map is not drawing.</p>
-  </div>
-
-  <aside class="legend" aria-label="Map legend">
-    <h3>Legend</h3>
-    <div id="legend-body"></div>
-  </aside>
-
-  <div id="status" class="status">Loading style&hellip;</div>
-
-  <div class="provenance">
-    OPEN DATA EDITION &middot; NOT SURVEYED &middot; FIELD REVIEW PENDING
-  </div>
-</main>
-
-<script src="vendor/maplibre-gl.js"></script>
-<script type="module" src="src/map.js"></script>
-</body>
-</html>
+<header><a class="brand" href="./" aria-label="Mount Vernon Estate Atlas"><span class="seal">MV</span><span><small>GEORGE WASHINGTON’S</small><strong>Mount Vernon</strong></span></a><div class="head-right"><span class="edition">ESTATE ATLAS <b>25</b></span><button id="about">Map notes ↗</button></div></header>
+<main><aside id="sidebar"><div class="intro"><span class="eyebrow">EXPLORE THE ESTATE</span><h1>Every path,<br>a story.</h1><p>Discover the grounds. Compose your tour.</p></div><div class="tabs" role="tablist"><button id="exploreTab" class="active" role="tab" aria-selected="true">Places</button><button id="tourTab" role="tab" aria-selected="false">Your route <span id="routeCount">0</span></button></div><section id="places"><label class="search"><span>⌕</span><input id="search" type="search" placeholder="Find a place…" aria-label="Find a place"></label><div id="placeList"></div></section><section id="tour" hidden><div class="tour-intro"><h2>Your estate walk</h2><p>Select a place, then add it to your route. Lines follow mapped paths.</p></div><ol id="stops"></ol><div id="routeStatus" role="status">Your first stop begins the journey.</div><button class="primary" id="export">Download route GeoJSON</button><button class="text-button" id="clear">Clear route</button><p class="fine">Planning preview. Visitor access, closures, and step-free suitability require estate review.</p></section><footer class="sidebar-foot"><span class="key-line"></span> Paths rooted in real geography</footer></aside>
+<section class="map-wrap" aria-label="Interactive estate map"><div id="map"></div><div class="map-heading"><span class="eyebrow">VIRGINIA · ON THE POTOMAC</span><h2>The historic estate</h2></div><div class="map-actions"><button id="home" title="Show whole estate">↗ <span>Whole estate</span></button><button id="core">Historic core</button><button id="locate" title="Show your phone location">⌖ <span>My location</span></button><button id="layersButton" aria-expanded="false">▱ Layers</button></div><div id="layers" hidden><h3>Reference overlays</h3><label><input type="checkbox" data-layer="gardens"> Garden walks & fences (2026)</label><label><input type="checkbox" data-layer="barriers"> Other walls & fences</label><label><input type="checkbox" data-layer="buildings"> Building footprints</label><label><input type="checkbox" data-layer="paths"> Roads &amp; walkways</label><label><input type="checkbox" data-layer="parking"> Parking areas</label><label><input type="checkbox" data-layer="land"> Land-cover boundaries</label><label><input type="checkbox" data-layer="places" checked> Place labels</label><label><input type="checkbox" data-layer="signs"> Mapped information</label><p>Boundaries and gates are source-derived. Confirm current access with the estate.</p></div><div class="compass" aria-label="North is up"><span>N</span><b>↑</b></div><div class="legend"><span><i class="building-key"></i>Buildings</span><span><i class="parking-key"></i>Parking</span><span><i class="road-key"></i>Roads</span><span><i class="path-key"></i>Paved walks</span><span><i class="gravel-key"></i>Gravel / earth</span><span><i class="steps-key"></i>Steps</span><span><i class="barrier-key"></i>Walls / fences</span><span><i class="route-key"></i>Your route</span></div><div class="map-note">OPEN MAP EDITION · FIELD REVIEW PENDING</div><div id="locationStatus" class="location-status" role="status" hidden></div><div id="detail" hidden></div></section></main>
+<dialog id="notes"><button id="closeNotes" class="close" aria-label="Close map notes">×</button><span class="eyebrow">CARTOGRAPHY & COVERAGE</span><h2>A living map of Mount Vernon.</h2><p>Building footprints, paths, land cover, and recorded points of interest come from OpenStreetMap. An editable 3D scene combines those footprints with public USGS / Mapzen elevation data. One north-up, oblique camera renders the landscape and buildings into lightweight map tiles. Tour routes use the same terrain projection. Woodlands have individual, irregular canopies and world-space pigment variation, without repeating texture stamps.</p><div id="stats"></div><h3>Edition 25</h3><p>The map artwork now comes from the Edition 25 Blender scene: distinct roads and light paved walks, marked parking areas, refined buildings and roofs, low-poly trees, orchard saplings, and improved mansion, barn, tomb and wharf details. The rectangular map retains a muted sage setting outside the estate, with exterior residential buildings and trees removed. Optional reference overlays can be enabled from Layers.</p><p>High-resolution tiles cover the full estate through zoom 19, with additional historic-core detail at zoom 20. The artwork and interactive routes share the same geographic projection. Building heights use selected lidar estimates and visual references; architectural details and parking stall spacing are illustrative.</p><h3>Edition 16</h3><p>Every named building in the historic core is now a place: 45 stops in all, the 16 highlights plus 29 outbuildings and facilities grouped by category. Tapping any building footprint or marker opens a small card with Details and Add to route, without moving the map. The ground artwork has been re-graded for contrast so paths, walls and beds read on a phone outdoors.</p><h3>2026 garden detail</h3><p>Edition 15 redraws the interiors of the Upper Garden, the Lower Garden, the Fruit Garden &amp; Nursery and the Pioneer Farm fields from 2026 aerial imagery. Walks, brick walls, post-and-rail fences, worm fences, box hedges and planting compartments were traced by hand and georeferenced to the mapped greenhouse, garden houses and fence corners. Source footways that ran through beds or along boundaries inside these gardens are retired; several were boundary walls or fences, not paths, and now appear as such. Gate positions are where walks meet walls and fences in the imagery. Nothing in this detail is surveyed.</p><p>Outside the gardens, Fairfax County / EagleView&rsquo;s 2025 aerial reference still informs the lawn areas, interpreted tree positions and the wider landscape. The Pioneer Farm fields are placed against the mapped lanes rather than the imagery, because the oblique farm imagery does not register to the map within a few metres. Tree heights and seasonal foliage are illustrative.</p><h3>Before visitor navigation</h3><p>This is an integration prototype, not a surveyed or estate-approved navigation product. The source does not provide a complete inventory of signs, individual trees, current closures, entrances, or accessible routes. Building heights, roof forms, windows, and planting are illustrative, not surveyed. The mansion, greenhouse, tomb, and barn have distinct models; the connecting colonnades, Kitchen and Servants’ Hall have also been refined from exterior photographs. Remaining secondary architecture is inferred from source footprints. Garden areas and path geometry are source-based, but planting details need estate review. The decorative illustrations in place cards are separate artistic interpretations.</p><p>The full mapped estate is included with surrounding context. The off-site distillery and gristmill are outside this extract. Some source names may be historical or outdated.</p><h3>Routes & audio integration</h3><p>Route previews use a walking graph assembled from mapped path nodes and, inside the four gardens, from the 2026 garden walks. Garden walks join the wider network only at gates. Explicit private/no-access segments are excluded. Unknown access and seasonal restrictions need validation. Disconnected paths produce a gap notice rather than an invented shortcut. Selected stop coordinates and their snapped path coordinates are exported separately.</p><p>Each tour stop has a stable OpenStreetMap ID and an empty audio URL for your app to populate with approved recordings. No audio content is supplied.</p><p><a href="estate.geojson" download>Download the source GeoJSON</a> · <a href="https://www.mountvernon.org/" target="_blank" rel="noreferrer">Mount Vernon visitor information</a></p><p class="fine">OpenStreetMap snapshot retrieved September 11, 2026. Garden detail traced September 13, 2026. © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap contributors</a>, ODbL 1.0. Derived geographic data remains subject to ODbL. Leaflet is BSD-2-Clause. See source documentation for integration details.</p></dialog>
+<script src="leaflet.js"></script><script src="data.js?v=ed25"></script><script src="art.js?v=ed25"></script><script src="gardens.js?v=ed25"></script><script src="baked/projection-data.js?v=ed25"></script><script src="projection.js?v=ed25"></script><script src="app.js?v=ed25"></script></body></html>

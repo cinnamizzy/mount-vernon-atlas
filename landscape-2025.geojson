@@ -1,0 +1,4500 @@
+{
+  "type": "FeatureCollection",
+  "name": "Mount Vernon 2025 landscape interpretation",
+  "source_extent_3857": [
+    -8581641.809151618,
+    4679759.720475581,
+    -8581040.683901334,
+    4680244.87864633
+  ],
+  "inspection_size": [
+    1200,
+    969
+  ],
+  "limitations": "Local core-area interpretation, not a complete tree inventory or survey. Leaf-off shadows obscure some crowns. Seasonal foliage and colors are artistic. Temporary works omitted.",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/1",
+      "properties": {
+        "name": "Bowling Green maintained turf",
+        "kind": "turf",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.0880625,
+              38.70891942902236
+            ],
+            [
+              -77.08793200000001,
+              38.709042267957294
+            ],
+            [
+              -77.08780149999998,
+              38.70910544218448
+            ],
+            [
+              -77.087563,
+              38.70905630667928
+            ],
+            [
+              -77.0874145,
+              38.708870293389296
+            ],
+            [
+              -77.08727950000001,
+              38.70869129901183
+            ],
+            [
+              -77.08712200000001,
+              38.70854389154098
+            ],
+            [
+              -77.086915,
+              38.70833681862808
+            ],
+            [
+              -77.086672,
+              38.70815782291501
+            ],
+            [
+              -77.086645,
+              38.70805604083909
+            ],
+            [
+              -77.086807,
+              38.707978826753795
+            ],
+            [
+              -77.087095,
+              38.708077099211515
+            ],
+            [
+              -77.0873785,
+              38.70822099792373
+            ],
+            [
+              -77.087689,
+              38.70834032834345
+            ],
+            [
+              -77.087995,
+              38.70834032834345
+            ],
+            [
+              -77.088121,
+              38.70843860030427
+            ],
+            [
+              -77.0881975,
+              38.70861759531438
+            ],
+            [
+              -77.0881705,
+              38.70877904140972
+            ],
+            [
+              -77.0880625,
+              38.70891942902236
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/2",
+      "properties": {
+        "name": "West meadow",
+        "kind": "light_turf",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.0901595,
+              38.70991617314525
+            ],
+            [
+              -77.08955199999998,
+              38.70990564423065
+            ],
+            [
+              -77.0889535,
+              38.709579247109204
+            ],
+            [
+              -77.0887465,
+              38.70934409987238
+            ],
+            [
+              -77.08824249999999,
+              38.70908789379364
+            ],
+            [
+              -77.08835499999998,
+              38.70888433214505
+            ],
+            [
+              -77.088526,
+              38.708596537101165
+            ],
+            [
+              -77.08872400000001,
+              38.708449129434925
+            ],
+            [
+              -77.08903000000001,
+              38.70834734777372
+            ],
+            [
+              -77.089678,
+              38.70833681862808
+            ],
+            [
+              -77.0900425,
+              38.708550910951246
+            ],
+            [
+              -77.0901865,
+              38.70865620202254
+            ],
+            [
+              -77.0901595,
+              38.70991617314525
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/3",
+      "properties": {
+        "name": "West lower field",
+        "kind": "light_turf",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.08975899999999,
+              38.708270134003044
+            ],
+            [
+              -77.0895655,
+              38.70829821174746
+            ],
+            [
+              -77.0889985,
+              38.70813676456636
+            ],
+            [
+              -77.089021,
+              38.70793670994486
+            ],
+            [
+              -77.0892235,
+              38.70765944033339
+            ],
+            [
+              -77.08956099999999,
+              38.707543618531716
+            ],
+            [
+              -77.08976799999998,
+              38.70782439833305
+            ],
+            [
+              -77.08975899999999,
+              38.708270134003044
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/4",
+      "properties": {
+        "name": "River upper lawn",
+        "kind": "light_turf",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.0858575,
+              38.708522833306034
+            ],
+            [
+              -77.08552,
+              38.70848422652589
+            ],
+            [
+              -77.08498,
+              38.708621105015986
+            ],
+            [
+              -77.0848675,
+              38.70849124594201
+            ],
+            [
+              -77.084935,
+              38.70820695903773
+            ],
+            [
+              -77.08526799999999,
+              38.707954258618265
+            ],
+            [
+              -77.0857315,
+              38.707775261947425
+            ],
+            [
+              -77.086069,
+              38.70791916126715
+            ],
+            [
+              -77.086015,
+              38.70813676456636
+            ],
+            [
+              -77.0858575,
+              38.708522833306034
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/5",
+      "properties": {
+        "name": "River lower lawn",
+        "kind": "turf",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.0863165,
+              38.70777175220431
+            ],
+            [
+              -77.086096,
+              38.707729635273395
+            ],
+            [
+              -77.085736,
+              38.70775069374194
+            ],
+            [
+              -77.0859385,
+              38.707582225819785
+            ],
+            [
+              -77.0861815,
+              38.707406737978765
+            ],
+            [
+              -77.086303,
+              38.70719615200096
+            ],
+            [
+              -77.086492,
+              38.70708734900274
+            ],
+            [
+              -77.08662249999999,
+              38.70720317154354
+            ],
+            [
+              -77.086726,
+              38.70736462083282
+            ],
+            [
+              -77.08662700000001,
+              38.70754712828602
+            ],
+            [
+              -77.0863165,
+              38.70777175220431
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/6",
+      "properties": {
+        "name": "River rough grass",
+        "kind": "rough_grass",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.085232,
+              38.70785598599172
+            ],
+            [
+              -77.084854,
+              38.70810868675851
+            ],
+            [
+              -77.08481349999998,
+              38.70683113483681
+            ],
+            [
+              -77.0861815,
+              38.70681358588774
+            ],
+            [
+              -77.08622649999998,
+              38.70697503605673
+            ],
+            [
+              -77.0860285,
+              38.70719966177234
+            ],
+            [
+              -77.08577650000001,
+              38.707399718456166
+            ],
+            [
+              -77.08561449999999,
+              38.707673479326914
+            ],
+            [
+              -77.085232,
+              38.70785598599172
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/7",
+      "properties": {
+        "name": "Upper Garden compartment 1",
+        "kind": "flower_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.08712200000001,
+              38.70926688717818
+            ],
+            [
+              -77.086978,
+              38.70925635816798
+            ],
+            [
+              -77.0868295,
+              38.70921073243914
+            ],
+            [
+              -77.08674400000001,
+              38.70917212603044
+            ],
+            [
+              -77.08681149999998,
+              38.70909842282867
+            ],
+            [
+              -77.08712200000001,
+              38.70926688717818
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/8",
+      "properties": {
+        "name": "Upper Garden compartment 2",
+        "kind": "flower_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.0871625,
+              38.709228280799806
+            ],
+            [
+              -77.086834,
+              38.70906332603924
+            ],
+            [
+              -77.0869915,
+              38.70888784183357
+            ],
+            [
+              -77.087068,
+              38.7089299580822
+            ],
+            [
+              -77.08713100000001,
+              38.709000151774795
+            ],
+            [
+              -77.087167,
+              38.70909140347217
+            ],
+            [
+              -77.0871625,
+              38.709228280799806
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/9",
+      "properties": {
+        "name": "Upper Garden compartment 3",
+        "kind": "flower_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.08678450000001,
+              38.70904577763806
+            ],
+            [
+              -77.08655499999999,
+              38.70892293870913
+            ],
+            [
+              -77.086708,
+              38.7087474541589
+            ],
+            [
+              -77.0869465,
+              38.708870293389296
+            ],
+            [
+              -77.08678450000001,
+              38.70904577763806
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/10",
+      "properties": {
+        "name": "Upper Garden compartment 4",
+        "kind": "flower_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.08650549999999,
+              38.7089053902735
+            ],
+            [
+              -77.086339,
+              38.7088071189543
+            ],
+            [
+              -77.086483,
+              38.70863514382067
+            ],
+            [
+              -77.0866675,
+              38.70872639598393
+            ],
+            [
+              -77.08650549999999,
+              38.7089053902735
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/11",
+      "properties": {
+        "name": "Upper Garden compartment 5",
+        "kind": "flower_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.086708,
+              38.70915457765595
+            ],
+            [
+              -77.086564,
+              38.70907736475708
+            ],
+            [
+              -77.08660900000001,
+              38.7090177001872
+            ],
+            [
+              -77.0867575,
+              38.70909140347217
+            ],
+            [
+              -77.086708,
+              38.70915457765595
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/12",
+      "properties": {
+        "name": "Upper Garden compartment 6",
+        "kind": "flower_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.0863975,
+              38.70897909367425
+            ],
+            [
+              -77.08628499999999,
+              38.70891942902236
+            ],
+            [
+              -77.086348,
+              38.708842215869524
+            ],
+            [
+              -77.0864605,
+              38.70890188058586
+            ],
+            [
+              -77.0863975,
+              38.70897909367425
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/13",
+      "properties": {
+        "name": "Lower Garden compartment 1",
+        "kind": "vegetable_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.08802200000001,
+              38.708270134003044
+            ],
+            [
+              -77.087887,
+              38.70831927004856
+            ],
+            [
+              -77.08777450000001,
+              38.70831225061555
+            ],
+            [
+              -77.087635,
+              38.70827715344018
+            ],
+            [
+              -77.0877295,
+              38.70817186181066
+            ],
+            [
+              -77.08802200000001,
+              38.708270134003044
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/14",
+      "properties": {
+        "name": "Lower Garden compartment 2",
+        "kind": "vegetable_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.087599,
+              38.70825960484603
+            ],
+            [
+              -77.0875315,
+              38.70822099792373
+            ],
+            [
+              -77.08761249999998,
+              38.708129745115436
+            ],
+            [
+              -77.0876935,
+              38.70816835208699
+            ],
+            [
+              -77.087599,
+              38.70825960484603
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/15",
+      "properties": {
+        "name": "Lower Garden compartment 3",
+        "kind": "vegetable_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.08749099999999,
+              38.708199939593676
+            ],
+            [
+              -77.0872975,
+              38.70810166730483
+            ],
+            [
+              -77.087374,
+              38.70801392407565
+            ],
+            [
+              -77.087572,
+              38.7081121964851
+            ],
+            [
+              -77.08749099999999,
+              38.708199939593676
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/16",
+      "properties": {
+        "name": "Lower Garden compartment 4",
+        "kind": "vegetable_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.087257,
+              38.70808060893963
+            ],
+            [
+              -77.08702749999999,
+              38.707954258618265
+            ],
+            [
+              -77.087113,
+              38.70786300546952
+            ],
+            [
+              -77.0873335,
+              38.707978826753795
+            ],
+            [
+              -77.087257,
+              38.70808060893963
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/17",
+      "properties": {
+        "name": "Lower Garden compartment 5",
+        "kind": "vegetable_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.08802200000001,
+              38.70822450764481
+            ],
+            [
+              -77.0878195,
+              38.70813325484098
+            ],
+            [
+              -77.0879095,
+              38.70803147273008
+            ],
+            [
+              -77.087959,
+              38.70808411866761
+            ],
+            [
+              -77.08799950000001,
+              38.708154313190654
+            ],
+            [
+              -77.08802200000001,
+              38.70822450764481
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/18",
+      "properties": {
+        "name": "Lower Garden compartment 6",
+        "kind": "vegetable_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.087779,
+              38.7081121964851
+            ],
+            [
+              -77.08758099999999,
+              38.70801392407565
+            ],
+            [
+              -77.08768,
+              38.70791214179485
+            ],
+            [
+              -77.087869,
+              38.70800690461264
+            ],
+            [
+              -77.087779,
+              38.7081121964851
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/19",
+      "properties": {
+        "name": "Lower Garden compartment 7",
+        "kind": "vegetable_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.087545,
+              38.70799637541687
+            ],
+            [
+              -77.0873335,
+              38.70789108337385
+            ],
+            [
+              -77.087428,
+              38.70779281066047
+            ],
+            [
+              -77.0876395,
+              38.707894593111114
+            ],
+            [
+              -77.087545,
+              38.70799637541687
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/20",
+      "properties": {
+        "name": "Lower Garden compartment 8",
+        "kind": "vegetable_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.0872975,
+              38.70787353468492
+            ],
+            [
+              -77.08713100000001,
+              38.70783141781398
+            ],
+            [
+              -77.087212,
+              38.707694537812
+            ],
+            [
+              -77.087392,
+              38.70777877169037
+            ],
+            [
+              -77.0872975,
+              38.70787353468492
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/21",
+      "properties": {
+        "name": "Kitchen garden compartment 1",
+        "kind": "vegetable_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.0885125,
+              38.70783141781398
+            ],
+            [
+              -77.0883595,
+              38.707761222973915
+            ],
+            [
+              -77.08844950000001,
+              38.70766295008204
+            ],
+            [
+              -77.0885845,
+              38.707729635273395
+            ],
+            [
+              -77.0885125,
+              38.70783141781398
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/22",
+      "properties": {
+        "name": "Kitchen garden compartment 2",
+        "kind": "vegetable_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.08833249999999,
+              38.70774718399761
+            ],
+            [
+              -77.0881885,
+              38.70768049882262
+            ],
+            [
+              -77.08828299999999,
+              38.70756818680834
+            ],
+            [
+              -77.088418,
+              38.70763838183794
+            ],
+            [
+              -77.08833249999999,
+              38.70774718399761
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/23",
+      "properties": {
+        "name": "Kitchen garden compartment 3",
+        "kind": "vegetable_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.0886025,
+              38.70769804755893
+            ],
+            [
+              -77.08847650000001,
+              38.707634872088114
+            ],
+            [
+              -77.08855299999999,
+              38.70753308926771
+            ],
+            [
+              -77.08868799999999,
+              38.70759275507656
+            ],
+            [
+              -77.0886025,
+              38.70769804755893
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/24",
+      "properties": {
+        "name": "Kitchen garden compartment 4",
+        "kind": "vegetable_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.08844950000001,
+              38.707610303834365
+            ],
+            [
+              -77.08830999999999,
+              38.70753659902255
+            ],
+            [
+              -77.0884045,
+              38.70742428678224
+            ],
+            [
+              -77.08853500000001,
+              38.7075015014664
+            ],
+            [
+              -77.08844950000001,
+              38.707610303834365
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/25",
+      "properties": {
+        "name": "Kitchen garden compartment 5",
+        "kind": "vegetable_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.08870149999998,
+              38.707483952681855
+            ],
+            [
+              -77.0885575,
+              38.70742077702189
+            ],
+            [
+              -77.0886565,
+              38.707304954833596
+            ],
+            [
+              -77.088787,
+              38.70736462083282
+            ],
+            [
+              -77.08870149999998,
+              38.707483952681855
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/26",
+      "properties": {
+        "name": "Kitchen garden compartment 6",
+        "kind": "vegetable_bed",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.088805,
+              38.70733303295708
+            ],
+            [
+              -77.08866099999999,
+              38.70726985716374
+            ],
+            [
+              -77.08875099999999,
+              38.70715754450441
+            ],
+            [
+              -77.08888599999999,
+              38.707227739937174
+            ],
+            [
+              -77.088805,
+              38.70733303295708
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/27",
+      "properties": {
+        "name": "Greenhouse forecourt",
+        "kind": "gravel",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.0867665,
+              38.70907385507786
+            ],
+            [
+              -77.086564,
+              38.70899313240865
+            ],
+            [
+              -77.08647850000001,
+              38.70899664209181
+            ],
+            [
+              -77.0862625,
+              38.70888082245636
+            ],
+            [
+              -77.08629850000001,
+              38.708800099569196
+            ],
+            [
+              -77.08651900000001,
+              38.70890188058586
+            ],
+            [
+              -77.0865955,
+              38.70891942902236
+            ],
+            [
+              -77.086807,
+              38.70900366145763
+            ],
+            [
+              -77.0867665,
+              38.70907385507786
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/28",
+      "properties": {
+        "name": "Orchard lawn 1",
+        "kind": "orchard_turf",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.08815699999998,
+              38.70761732333631
+            ],
+            [
+              -77.087734,
+              38.70746289413476
+            ],
+            [
+              -77.08796799999999,
+              38.70721721062666
+            ],
+            [
+              -77.088319,
+              38.707368130595924
+            ],
+            [
+              -77.08815699999998,
+              38.70761732333631
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/29",
+      "properties": {
+        "name": "Orchard lawn 2",
+        "kind": "orchard_turf",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.08765749999999,
+              38.707406737978765
+            ],
+            [
+              -77.0873425,
+              38.70728389623375
+            ],
+            [
+              -77.0875315,
+              38.7070311925518
+            ],
+            [
+              -77.0879095,
+              38.70719264222941
+            ],
+            [
+              -77.08765749999999,
+              38.707406737978765
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/area/30",
+      "properties": {
+        "name": "Orchard lawn 3",
+        "kind": "orchard_turf",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -77.08837749999999,
+              38.70728389623375
+            ],
+            [
+              -77.08796799999999,
+              38.70714350540959
+            ],
+            [
+              -77.08816599999999,
+              38.706880271871306
+            ],
+            [
+              -77.08860700000001,
+              38.7070662903388
+            ],
+            [
+              -77.08837749999999,
+              38.70728389623375
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/walk/1",
+      "properties": {
+        "name": "Lower Garden western main walk",
+        "kind": "interpreted_walk",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "width_m": 3.2,
+        "routing_status": "visual reference only; access and connectivity not verified"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -77.08804900000001,
+            38.70825960484603
+          ],
+          [
+            -77.0878375,
+            38.708182390980596
+          ],
+          [
+            -77.08760349999999,
+            38.70810517703176
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/walk/2",
+      "properties": {
+        "name": "Lower Garden central walk",
+        "kind": "interpreted_walk",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "width_m": 3.2,
+        "routing_status": "visual reference only; access and connectivity not verified"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -77.08760349999999,
+            38.70810517703176
+          ],
+          [
+            -77.087095,
+            38.70784545677372
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/walk/3",
+      "properties": {
+        "name": "Lower Garden south-west division",
+        "kind": "interpreted_walk",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "width_m": 1.1,
+        "routing_status": "visual reference only; access and connectivity not verified"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -77.08780149999998,
+            38.70813325484098
+          ],
+          [
+            -77.087896,
+            38.70801392407565
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/walk/4",
+      "properties": {
+        "name": "Lower Garden south-middle division",
+        "kind": "interpreted_walk",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "width_m": 1.1,
+        "routing_status": "visual reference only; access and connectivity not verified"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -77.0875585,
+            38.70801041434422
+          ],
+          [
+            -77.087662,
+            38.70790161258515
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/walk/5",
+      "properties": {
+        "name": "Lower Garden south-east division",
+        "kind": "interpreted_walk",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "width_m": 1.1,
+        "routing_status": "visual reference only; access and connectivity not verified"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -77.087311,
+            38.70788406389881
+          ],
+          [
+            -77.08741,
+            38.70777877169037
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/1",
+      "properties": {
+        "name": "Aerial tree candidate 1",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.08,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.088616,
+          38.70965294981526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/2",
+      "properties": {
+        "name": "Aerial tree candidate 2",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.91,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08854400000001,
+          38.7096915559643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/3",
+      "properties": {
+        "name": "Aerial tree candidate 3",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.91,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08832349999999,
+          38.709607324339515
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/4",
+      "properties": {
+        "name": "Aerial tree candidate 4",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.91,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0881615,
+          38.70951958295816
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/5",
+      "properties": {
+        "name": "Aerial tree candidate 5",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 6.26,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08789150000001,
+          38.709414293158375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/6",
+      "properties": {
+        "name": "Aerial tree candidate 6",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.47,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08776999999999,
+          38.70924582915621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/7",
+      "properties": {
+        "name": "Aerial tree candidate 7",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 6.65,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08759450000001,
+          38.70921073243914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/8",
+      "properties": {
+        "name": "Aerial tree candidate 8",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.08,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08746399999998,
+          38.70926688717818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/9",
+      "properties": {
+        "name": "Aerial tree candidate 9",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 4.69,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08739650000001,
+          38.709175635704796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/10",
+      "properties": {
+        "name": "Aerial tree candidate 10",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 6.65,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0874505,
+          38.709059816359336
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/11",
+      "properties": {
+        "name": "Aerial tree candidate 11",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.08,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0873335,
+          38.708975583990245
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/12",
+      "properties": {
+        "name": "Aerial tree candidate 12",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.08,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.087266,
+          38.708849235250504
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/13",
+      "properties": {
+        "name": "Aerial tree candidate 13",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 6.65,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0880265,
+          38.70893346776847
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/14",
+      "properties": {
+        "name": "Aerial tree candidate 14",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 7.82,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.088103,
+          38.70878957049025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/15",
+      "properties": {
+        "name": "Aerial tree candidate 15",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 8.6,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08819299999999,
+          38.708596537101165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/16",
+      "properties": {
+        "name": "Aerial tree candidate 16",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 7.82,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.088103,
+          38.7085017750649
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/17",
+      "properties": {
+        "name": "Aerial tree candidate 17",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 8.6,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0879725,
+          38.708407012903024
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/18",
+      "properties": {
+        "name": "Aerial tree candidate 18",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 8.6,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08779249999999,
+          38.708435090593724
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/19",
+      "properties": {
+        "name": "Aerial tree candidate 19",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 9.78,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08760349999999,
+          38.70843860030427
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/20",
+      "properties": {
+        "name": "Aerial tree candidate 20",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 8.99,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08739650000001,
+          38.70837542548784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/21",
+      "properties": {
+        "name": "Aerial tree candidate 21",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 8.99,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0872165,
+          38.70831576033214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/22",
+      "properties": {
+        "name": "Aerial tree candidate 22",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 9.38,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0870095,
+          38.708203449315796
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/23",
+      "properties": {
+        "name": "Aerial tree candidate 23",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 6.65,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08685199999998,
+          38.70808060893963
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/24",
+      "properties": {
+        "name": "Aerial tree candidate 24",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.08,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08670349999998,
+          38.70802445326882
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/25",
+      "properties": {
+        "name": "Aerial tree candidate 25",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.91,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08658650000001,
+          38.708049021380226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/26",
+      "properties": {
+        "name": "Aerial tree candidate 26",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.08,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08833249999999,
+          38.70838595462777
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/27",
+      "properties": {
+        "name": "Aerial tree candidate 27",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.91,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.088364,
+          38.70825960484603
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/28",
+      "properties": {
+        "name": "Aerial tree candidate 28",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 4.69,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08817499999999,
+          38.708270134003044
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/29",
+      "properties": {
+        "name": "Aerial tree candidate 29",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 4.3,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.088301,
+          38.70807358948321
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/30",
+      "properties": {
+        "name": "Aerial tree candidate 30",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.91,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.088211,
+          38.70797180728737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/31",
+      "properties": {
+        "name": "Aerial tree candidate 31",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.08,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08813,
+          38.70787002494663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/32",
+      "properties": {
+        "name": "Aerial tree candidate 32",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.87,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08801749999999,
+          38.70776824246102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/33",
+      "properties": {
+        "name": "Aerial tree candidate 33",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 4.69,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.087896,
+          38.707729635273395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/34",
+      "properties": {
+        "name": "Aerial tree candidate 34",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 4.3,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08776999999999,
+          38.70768049882262
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/35",
+      "properties": {
+        "name": "Aerial tree candidate 35",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.47,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08761249999998,
+          38.707620833087
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/36",
+      "properties": {
+        "name": "Aerial tree candidate 36",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.87,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08743700000001,
+          38.707529579512695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/37",
+      "properties": {
+        "name": "Aerial tree candidate 37",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.08,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0873335,
+          38.70746289413476
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/38",
+      "properties": {
+        "name": "Aerial tree candidate 38",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.91,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.087194,
+          38.707375150121635
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/39",
+      "properties": {
+        "name": "Aerial tree candidate 39",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.13,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0870455,
+          38.70733654272174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/40",
+      "properties": {
+        "name": "Aerial tree candidate 40",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 4.69,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08683849999998,
+          38.707529579512695
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/41",
+      "properties": {
+        "name": "Aerial tree candidate 41",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.08,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08671249999999,
+          38.70761381358544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/42",
+      "properties": {
+        "name": "Aerial tree candidate 42",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.91,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0865505,
+          38.70778579117578
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/43",
+      "properties": {
+        "name": "Aerial tree candidate 43",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.87,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08853950000001,
+          38.70851581389302
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/44",
+      "properties": {
+        "name": "Aerial tree candidate 44",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 7.43,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0886115,
+          38.70842105174976
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/45",
+      "properties": {
+        "name": "Aerial tree candidate 45",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 7.82,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0887555,
+          38.70823854652737
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/46",
+      "properties": {
+        "name": "Aerial tree candidate 46",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 7.43,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.088913,
+          38.708049021380226
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/47",
+      "properties": {
+        "name": "Aerial tree candidate 47",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 6.65,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0890075,
+          38.70783141781398
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/48",
+      "properties": {
+        "name": "Aerial tree candidate 48",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 6.65,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08915149999999,
+          38.70770506705222
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/49",
+      "properties": {
+        "name": "Aerial tree candidate 49",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 6.65,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08927750000001,
+          38.70748746243914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/50",
+      "properties": {
+        "name": "Aerial tree candidate 50",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 6.26,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.085295,
+          38.70815080346615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/51",
+      "properties": {
+        "name": "Aerial tree candidate 51",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 4.3,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0850475,
+          38.70790863205846
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/52",
+      "properties": {
+        "name": "Aerial tree candidate 52",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.52,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0849845,
+          38.70774718399761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/53",
+      "properties": {
+        "name": "Aerial tree candidate 53",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.91,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08489,
+          38.707610303834365
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/54",
+      "properties": {
+        "name": "Aerial tree candidate 54",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 4.69,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0848585,
+          38.70736111106953
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/55",
+      "properties": {
+        "name": "Aerial tree candidate 55",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.08,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0849665,
+          38.70723475947665
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/56",
+      "properties": {
+        "name": "Aerial tree candidate 56",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.47,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08520949999999,
+          38.70712946631202
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/57",
+      "properties": {
+        "name": "Aerial tree candidate 57",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 7.04,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.085421,
+          38.70716807382371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/58",
+      "properties": {
+        "name": "Aerial tree candidate 58",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 7.82,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0856415,
+          38.70706278056089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/59",
+      "properties": {
+        "name": "Aerial tree candidate 59",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 7.43,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0858845,
+          38.70703470233126
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/60",
+      "properties": {
+        "name": "Aerial tree candidate 60",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 4.3,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08610049999999,
+          38.707048741447466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/61",
+      "properties": {
+        "name": "Aerial tree candidate 61",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 6.65,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08644249999999,
+          38.70715754450441
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/62",
+      "properties": {
+        "name": "Aerial tree candidate 62",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.08,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08660900000001,
+          38.70702768277215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/63",
+      "properties": {
+        "name": "Aerial tree candidate 63",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 2.74,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08646949999999,
+          38.70699609474754
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/64",
+      "properties": {
+        "name": "Aerial tree candidate 64",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.87,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0868835,
+          38.70691185994706
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/65",
+      "properties": {
+        "name": "Aerial tree candidate 65",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.08,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.086987,
+          38.70688378165818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/66",
+      "properties": {
+        "name": "Aerial tree candidate 66",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 4.69,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0871355,
+          38.706950467576284
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/67",
+      "properties": {
+        "name": "Aerial tree candidate 67",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.08,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.087284,
+          38.706897820803995
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/68",
+      "properties": {
+        "name": "Aerial tree candidate 68",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.13,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0861635,
+          38.709179145379025
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/69",
+      "properties": {
+        "name": "Aerial tree candidate 69",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.52,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0862625,
+          38.7092353001429
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/70",
+      "properties": {
+        "name": "Aerial tree candidate 70",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.13,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08632549999999,
+          38.70931251287119
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/71",
+      "properties": {
+        "name": "Aerial tree candidate 71",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.91,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0864245,
+          38.709333570873554
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/72",
+      "properties": {
+        "name": "Aerial tree candidate 72",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 4.3,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08660900000001,
+          38.70928092585607
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/73",
+      "properties": {
+        "name": "Aerial tree candidate 73",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.91,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0865685,
+          38.70914053895328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/74",
+      "properties": {
+        "name": "Aerial tree candidate 74",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.52,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08646499999999,
+          38.70909491315052
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/75",
+      "properties": {
+        "name": "Aerial tree candidate 75",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.52,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08635699999998,
+          38.70907736475708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/76",
+      "properties": {
+        "name": "Aerial tree candidate 76",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.52,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08622649999998,
+          38.70903875827637
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/77",
+      "properties": {
+        "name": "Aerial tree candidate 77",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 4.3,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0861185,
+          38.70896856462166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/78",
+      "properties": {
+        "name": "Aerial tree candidate 78",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 5.08,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08599699999999,
+          38.708863274010376
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/79",
+      "properties": {
+        "name": "Aerial tree candidate 79",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 4.69,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.086114,
+          38.70875096385412
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/80",
+      "properties": {
+        "name": "Aerial tree candidate 80",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 4.69,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0862715,
+          38.708729905680165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/81",
+      "properties": {
+        "name": "Aerial tree candidate 81",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.91,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0864605,
+          38.70860706620856
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/82",
+      "properties": {
+        "name": "Aerial tree candidate 82",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 4.69,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.086474,
+          38.7084736974004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/tree/83",
+      "properties": {
+        "name": "Aerial tree candidate 83",
+        "kind": "tree_candidate",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "crown_radius_m": 3.91,
+        "height_status": "illustrative; not measured",
+        "species": "unknown"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08637499999999,
+          38.708361386632134
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/1",
+      "properties": {
+        "name": "Orchard planting circle 1",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08807599999999,
+          38.70759977458021
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/2",
+      "properties": {
+        "name": "Orchard planting circle 2",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0879905,
+          38.70756116730161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/3",
+      "properties": {
+        "name": "Orchard planting circle 3",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0879095,
+          38.70752606975753
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/4",
+      "properties": {
+        "name": "Orchard planting circle 4",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08785099999999,
+          38.7074734234091
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/5",
+      "properties": {
+        "name": "Orchard planting circle 5",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0879455,
+          38.70742428678224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/6",
+      "properties": {
+        "name": "Orchard planting circle 6",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.088031,
+          38.70746991365115
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/7",
+      "properties": {
+        "name": "Orchard planting circle 7",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0881165,
+          38.707508520979005
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/8",
+      "properties": {
+        "name": "Orchard planting circle 8",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08819299999999,
+          38.70745938437628
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/9",
+      "properties": {
+        "name": "Orchard planting circle 9",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0881165,
+          38.70742428678224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/10",
+      "properties": {
+        "name": "Orchard planting circle 10",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0880445,
+          38.70738216964663
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/11",
+      "properties": {
+        "name": "Orchard planting circle 11",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08796799999999,
+          38.707340052486224
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/12",
+      "properties": {
+        "name": "Orchard planting circle 12",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.088004,
+          38.70725581809097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/13",
+      "properties": {
+        "name": "Orchard planting circle 13",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.088094,
+          38.70729442553445
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/14",
+      "properties": {
+        "name": "Orchard planting circle 14",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0881705,
+          38.70733654272174
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/15",
+      "properties": {
+        "name": "Orchard planting circle 15",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08825599999999,
+          38.70737164035886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/16",
+      "properties": {
+        "name": "Orchard planting circle 16",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.087716,
+          38.70735760130609
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/17",
+      "properties": {
+        "name": "Orchard planting circle 17",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08764400000001,
+          38.70733303295708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/18",
+      "properties": {
+        "name": "Orchard planting circle 18",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0875675,
+          38.70730144506739
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/19",
+      "properties": {
+        "name": "Orchard planting circle 19",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0874865,
+          38.70726985716374
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/20",
+      "properties": {
+        "name": "Orchard planting circle 20",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08741,
+          38.707248798553564
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/21",
+      "properties": {
+        "name": "Orchard planting circle 21",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08745499999999,
+          38.707185622685785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/22",
+      "properties": {
+        "name": "Orchard planting circle 22",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08755399999998,
+          38.707213700856144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/23",
+      "properties": {
+        "name": "Orchard planting circle 23",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0876395,
+          38.70724177901544
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/24",
+      "properties": {
+        "name": "Orchard planting circle 24",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08772499999999,
+          38.7072733669315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/25",
+      "properties": {
+        "name": "Orchard planting circle 25",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08779249999999,
+          38.70722423016717
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/26",
+      "properties": {
+        "name": "Orchard planting circle 26",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.087716,
+          38.70717860314148
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/27",
+      "properties": {
+        "name": "Orchard planting circle 27",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.087626,
+          38.70714350540959
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/28",
+      "properties": {
+        "name": "Orchard planting circle 28",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08754049999999,
+          38.70710840766047
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/29",
+      "properties": {
+        "name": "Orchard planting circle 29",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08761700000001,
+          38.707048741447466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/30",
+      "properties": {
+        "name": "Orchard planting circle 30",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08770249999999,
+          38.707090858779466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/31",
+      "properties": {
+        "name": "Orchard planting circle 31",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0878195,
+          38.707132976086676
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/32",
+      "properties": {
+        "name": "Orchard planting circle 32",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.088346,
+          38.70721721062666
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/33",
+      "properties": {
+        "name": "Orchard planting circle 33",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.088265,
+          38.70719966177234
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/34",
+      "properties": {
+        "name": "Orchard planting circle 34",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08817950000001,
+          38.70716807382371
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/35",
+      "properties": {
+        "name": "Orchard planting circle 35",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08808499999999,
+          38.707125956537205
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/36",
+      "properties": {
+        "name": "Orchard planting circle 36",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0881165,
+          38.70706278056089
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/37",
+      "properties": {
+        "name": "Orchard planting circle 37",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0882065,
+          38.707101388108605
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/38",
+      "properties": {
+        "name": "Orchard planting circle 38",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08830999999999,
+          38.707136485861135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/39",
+      "properties": {
+        "name": "Orchard planting circle 39",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0884,
+          38.70715403473097
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/40",
+      "properties": {
+        "name": "Orchard planting circle 40",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08844950000001,
+          38.7070978783324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/41",
+      "properties": {
+        "name": "Orchard planting circle 41",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0883595,
+          38.7070662903388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/42",
+      "properties": {
+        "name": "Orchard planting circle 42",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0882695,
+          38.70702768277215
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/43",
+      "properties": {
+        "name": "Orchard planting circle 43",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.088184,
+          38.70697854583895
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/44",
+      "properties": {
+        "name": "Orchard planting circle 44",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0882515,
+          38.70691887951757
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/45",
+      "properties": {
+        "name": "Orchard planting circle 45",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0883415,
+          38.706960996926085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/46",
+      "properties": {
+        "name": "Orchard planting circle 46",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.08844049999999,
+          38.70699960452875
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "aerial2025/planting/47",
+      "properties": {
+        "name": "Orchard planting circle 47",
+        "kind": "planting_site",
+        "source_year": 2025,
+        "source": "https://www.fairfaxcounty.gov/gisimagery/rest/services/AerialPhotography/2025AerialPhotography3inch/ImageServer",
+        "method": "manual aerial interpretation",
+        "confidence": "medium",
+        "surveyed": false,
+        "radius_m": 1.15,
+        "tree_presence": "not confirmed; render planting circle only"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0885125,
+          38.707041721889695
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+/* One common orthographic ground projection for baked artwork and interactive geometry. */
+(()=>{const m=window.ESTATE_PROJECTION,R=6378137,c=m.cos_lat,d=m.dem,a=m.alpha,b=m.beta;
+function elevation(x,y){let u=Math.max(0,Math.min(d.nx-1.00001,(x-d.x0)/d.dx)),v=Math.max(0,Math.min(d.ny-1.00001,(y-d.y0)/d.dy));const i=Math.floor(u),j=Math.floor(v);u-=i;v-=j;const h00=d.heights[j][i],h10=d.heights[j][i+1],h01=d.heights[j+1][i],h11=d.heights[j+1][i+1];return v<u?h00+(h10-h00)*u+(h11-h10)*v:h00+(h11-h01)*u+(h01-h00)*v;}
+const projection={project(ll){const x=(ll.lng*Math.PI/180*R-m.mercator_origin[0])*c,y=(R*Math.log(Math.tan(Math.PI/4+ll.lat*Math.PI/360))-m.mercator_origin[1])*c;return L.point(x,a*y+b*elevation(x,y));},unproject(p){let y=p.y/a;for(let i=0;i<12;i++)y=(p.y-b*elevation(p.x,y))/a;return L.latLng((2*Math.atan(Math.exp((y/c+m.mercator_origin[1])/R))-Math.PI/2)*180/Math.PI,(p.x/c+m.mercator_origin[0])/R*180/Math.PI);}};
+window.estateCRS=L.extend({},L.CRS.Simple,{projection,transformation:new L.Transformation(1,0,-1,0),scale:z=>Math.pow(2,z-17),zoom:s=>Math.log2(s)+17,distance:L.CRS.Earth.distance,infinite:true});
+window.estateDensify=coords=>{const out=[];for(let i=0;i<coords.length;i++){if(i){const q=coords[i-1],p=coords[i],n=Math.ceil(L.latLng(q[1],q[0]).distanceTo(L.latLng(p[1],p[0]))/5);for(let j=1;j<n;j++)out.push([q[0]+(p[0]-q[0])*j/n,q[1]+(p[1]-q[1])*j/n]);}out.push(coords[i]);}return out;};
+window.addEstateBake=map=>{const url=(z,x,y)=>window.ESTATE_TILES?.[z+'/'+x+'/'+y]||(m.tile_base||'baked/tiles')+'/'+z+'/'+x+'/'+y+'.webp?v='+encodeURIComponent(m.tile_revision||'09');
+// Tiles are drawn onto a canvas so a missing tile (zoom 20 exists only over the historic core) can fall back to the matching quarter of its parent instead of leaving a hole.
+const Tile=L.GridLayer.extend({createTile(coords,done){const c=document.createElement('canvas');c.width=c.height=512;c.setAttribute('role','presentation');const ctx=c.getContext('2d');
+ const load=(z,x,y,sx,sy,sw)=>{const img=new Image();img.onload=()=>{ctx.drawImage(img,sx,sy,sw,sw,0,0,512,512);done(null,c);};img.onerror=()=>{if(z>14){const px=Math.floor(x/2),py=Math.floor(y/2),q=256*Math.pow(2,-(coords.z-z+1)),qx=(x-2*px),qy=(y-2*py);load(z-1,px,py,sx/2+qx*256,sy/2+qy*256,sw/2);}else done(null,c);};const r=m.tile_ranges?.[z];if(r&&(x<r[0]||y<r[1]||x>r[2]||y>r[3]))img.onerror();else img.src=url(z,x,y);};
+ load(coords.z,coords.x,coords.y,0,0,512);return c;}});
+return new Tile({tileSize:512,maxNativeZoom:20,minNativeZoom:14,noWrap:true,keepBuffer:1,updateWhenIdle:true,bounds:[[38.7026,-77.0992],[38.7175,-77.0768]],attribution:'Terrain: USGS / Mapzen'}).addTo(map);};
+})();
