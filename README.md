@@ -2,19 +2,29 @@
 
 An interactive illustrated estate map with place cards, a walking-route planner, and optional geographic reference overlays. Edition 25 replaces the previous vector-map application with new artwork rendered from the refined Blender scene.
 
-## View locally
+## Open the map online
 
-Double-click `serve.cmd`, then open the address it displays. Or run:
+**[Open the Mount Vernon Estate Atlas](https://cinnamizzy.github.io/mount-vernon-atlas/)**
+
+Share this link with anyone to view the Edition 25 map in a browser. No download, Python installation, or local server is needed. The GitHub repository contains the project files; the link above opens the interactive website.
+
+## Optional: preview locally
+
+These steps are only for previewing a downloaded copy on your own computer.
+
+Open the project folder and double-click `serve.cmd`, then use the address it displays. Alternatively, run this PowerShell command, replacing the folder path if you saved the project elsewhere:
 
 ```powershell
-& "$env:LOCALAPPDATA\Programs\Python\Python312\python.exe" -m http.server 8000
+& "$env:LOCALAPPDATA\Programs\Python\Python312\python.exe" -m http.server 8000 --bind 127.0.0.1 --directory "C:\Users\irollo3\Downloads\mount-vernon-atlas"
 ```
 
-Open http://localhost:8000/. No build step or server-side application is required.
+Open http://localhost:8000/. The `--directory` option selects the folder containing `index.html`, preventing a listing of your Windows user folder. If an older server is already using port 8000, stop it with **Ctrl+C** in its terminal first.
 
-## GitHub Pages
+A localhost address works only on your own computer. To share the map, use the public website link above. No build step is required.
 
-Serve the `main` branch at `/ (root)` under repository **Settings → Pages**. All assets use relative paths, including the 324 Edition 25 WebP map tiles (about 5.45 MB total).
+## GitHub Pages hosting
+
+The public website is hosted from this repository. Its Pages source is the `main` branch at `/ (root)` under **Settings → Pages**. All assets use relative paths, including the 324 Edition 25 WebP map tiles (about 5.45 MB total).
 
 ## Contents
 
